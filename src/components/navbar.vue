@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar" class="navbar navbar-default navbar-static-top">
+  <div id="navbar" class="navbar navbar-static-top">
     <div class="container">
       <div class="navbar-collapse">
         <ul class="nav navbar-nav">
@@ -30,6 +30,14 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+
+li > a {
+  color: white;
+}
+
+li > a:hover {
+  color: black;
+}
 
 .margin {
   height: 51px;
