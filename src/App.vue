@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <div class="col-sm-6">
-      Helloooo
-    </div>
-    <div class="col-sm-6">
-      World!!!!!!!!!!!!
-    </div>
+    <navbar></navbar>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-export default {};
+import navbar from './components/navbar';
+
+export default {
+  components: {
+    navbar,
+  },
+};
 </script>
 
 <style lang="scss">
