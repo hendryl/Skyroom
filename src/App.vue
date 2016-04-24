@@ -1,6 +1,11 @@
 <template>
   <div id="app">
-    Hello World!
+    <div class="col-sm-6">
+      Helloooo
+    </div>
+    <div class="col-sm-6">
+      World!!!!!!!!!!!!
+    </div>
   </div>
 </template>
 
@@ -8,13 +13,15 @@
 export default {};
 </script>
 
-<style>
+<style lang="scss">
 html {
   height: 100%;
+  margin: 0;
 }
 
 body {
   height: 100%;
+  margin: 0;
 }
 
 </style>
