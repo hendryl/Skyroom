@@ -25,7 +25,7 @@ export default {};
 .logo-container {
   width: 100%;
   height: 100%;
-  margin: 30px 0 60px 0;
+  margin: 70px 0 30px 0;
 }
 
 .logo {

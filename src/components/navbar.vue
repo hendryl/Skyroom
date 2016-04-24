@@ -33,6 +33,7 @@ export default {};
 
 li > a {
   color: white;
+  padding: 10px 15px;
 }
 
 li > a:hover {
