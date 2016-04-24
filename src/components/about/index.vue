@@ -1,16 +1,33 @@
 <template>
   <div id="about">
+    <logo></logo>
+    <navbar></navbar>
     <div class="container">
-      <div class="col-xs-12">
-        about
+      <div class="row">
+        <div class="col-xs-12">
+          about
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import navbar from '../../components/navbar';
+import logo from '../../components/logo';
+
+export default {
+  components: {
+    navbar,
+    logo,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
+
+#about {
+  background-image: url('../../assets/home_bg.png');
+  height: 100vh;
+}
 </style>
