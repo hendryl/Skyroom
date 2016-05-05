@@ -154,6 +154,26 @@ export default navbar;
   border-radius: 0;
   background-color: rgba(0, 0, 0, 0.6);
   overflow: hidden;
+
+  .navbar-toggle {
+    padding: 10px;
+  }
+
+  .navbar-toggle>.icons {
+    .bar-1 {
+      top: 50%;
+      transform: translateY(-50%) rotateZ(45deg);
+    }
+
+    .bar-2 {
+      opacity: 0;
+    }
+
+    .bar-3 {
+      top: 50%;
+      transform: translateY(-50%) rotateZ(-45deg);
+    }
+  }
 }
 
 .navbar-container {
@@ -171,7 +191,7 @@ export default navbar;
   padding: 14px;
   height: 50px;
   width: 50px;
-  transition: all 350ms;
+  transition: all 100ms;
 
   .icons {
     position: relative;
