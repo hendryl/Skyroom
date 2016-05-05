@@ -1,41 +1,39 @@
 <script>
 const routes = [
   {
-    path:'/',
-    text:'HOME'
+    path: '/',
+    text: 'HOME',
   },
   {
-    path:'/star',
-    text:'STAR'
+    path: '/star',
+    text: 'STAR',
   },
   {
-    path:'/constellation',
-    text:'CONSTELLATION'
+    path: '/constellation',
+    text: 'CONSTELLATION',
   },
   {
-    path:'/about',
-    text:'ABOUT'
+    path: '/about',
+    text: 'ABOUT',
   },
   {
-    path:'/contact',
-    text:'CONTACT'
-  }
-]
+    path: '/contact',
+    text: 'CONTACT',
+  },
+];
 
-class Navbar extends Vue {
-  constructor() {
-    const properties = {
-      el: '#navbar',
-      data: {
-        routes
-      }
+const navbar = {
+  el() {
+    return '#navbar';
+  },
+  data() {
+    return {
+      routes,
     };
+  },
+};
 
-    super(properties);
-  }
-}
-
-export default Navbar;
+export default navbar;
 </script>
 
 <template>
