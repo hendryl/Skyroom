@@ -284,6 +284,12 @@ export default navbar;
     border-radius: 0;
   }
 
+  ul>li>a:focus {
+    color: black;
+    background-color: darken(white, 10%);
+    border-radius: 0;
+  }
+
   ul>li>a:focus:active {
     color: black;
     background-color: darken(white, 10%);
@@ -291,6 +297,12 @@ export default navbar;
   }
 
   ul>li>a.active {
+    background-color: lighten(rgba(0, 0, 0, 0.4), 50%);
+    border-radius: 0;
+  }
+
+  ul>li>a.active:focus {
+    color: white;
     background-color: lighten(rgba(0, 0, 0, 0.4), 50%);
     border-radius: 0;
   }
