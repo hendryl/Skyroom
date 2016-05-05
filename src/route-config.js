@@ -1,9 +1,6 @@
 export function configRouter(router) {
   router.map({
-    '*': {
-      component: require('./components/home/index.vue'),
-    },
-    '/': {
+    '/home': {
       component: require('./components/home/index.vue'),
     },
     '/star': {
@@ -18,5 +15,9 @@ export function configRouter(router) {
     '/contact': {
       component: require('./components/contact/index.vue'),
     },
+  });
+
+  router.redirect({
+    '*': '/home',
   });
 }

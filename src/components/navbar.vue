@@ -1,7 +1,7 @@
 <script>
 const routes = [
   {
-    path: '/',
+    path: '/home',
     text: 'HOME',
   },
   {
@@ -54,7 +54,10 @@ export default navbar;
     <div id="navbar-content" class="collapse navbar-collapse navbar-inner">
       <ul class="nav navbar-nav">
         <li v-for="route in routes">
-          <a v-link="{path: route.path}">
+          <a v-link="{
+            path: route.path,
+            activeClass: 'active'
+            }">
             {{ route.text }}
           </a>
         </li>
@@ -109,8 +112,25 @@ li > a {
   }
 }
 
-
 li > a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 15px;
+}
+
+li > a:focus {
+  color: black;
+  background-color: white;
+  border-radius: 15px;
+}
+
+li > a:focus:active {
+  color: black;
+  background-color: darken(white, 10%);
+  border-radius: 15px;
+}
+
+.active {
   color: black;
   background-color: white;
   border-radius: 15px;
