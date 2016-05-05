@@ -1,31 +1,70 @@
+<script>
+const routes = [
+  {
+    path:'/',
+    text:'HOME'
+  },
+  {
+    path:'/star',
+    text:'STAR'
+  },
+  {
+    path:'/constellation',
+    text:'CONSTELLATION'
+  },
+  {
+    path:'/about',
+    text:'ABOUT'
+  },
+  {
+    path:'/contact',
+    text:'CONTACT'
+  }
+]
+
+class Navbar extends Vue {
+  constructor() {
+    const properties = {
+      el: '#navbar',
+      data: {
+        routes
+      }
+    };
+
+    super(properties);
+  }
+}
+
+export default Navbar;
+</script>
+
 <template>
-  <div id="navbar" class="navbar navbar-static-top  center">
-    <div class="navbar-collapse navbar-inner">
+  <div id="navbar"
+  role="navigation"
+  class="navbar navbar-static-top center">
+    <div class="navbar-header">
+      <button type="button"
+      class="navbar-toggle collapsed"
+      data-toggle="collapse"
+      data-target="#navbar-content">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar-content" class="collapse navbar-collapse navbar-inner">
       <ul class="nav navbar-nav">
-        <li>
-          <a v-link="{path: '/'}">HOME</a>
-        </li>
-        <li>
-          <a v-link="{path: '/star'}">STAR</a>
-        </li>
-        <li>
-          <a v-link="{path: '/constellation'}">CONSTELLATION</a>
-        </li>
-        <li>
-          <a v-link="{path: '/about'}">ABOUT</a>
-        </li>
-        <li>
-          <a v-link="{path: '/contact'}">CONTACT</a>
+        <li v-for="route in routes">
+          <a v-link="{path: route.path}">
+            {{ route.text }}
+          </a>
         </li>
       </ul>
     </div>
   </div>
   <div class="margin"></div>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style lang="scss" scoped>
 
