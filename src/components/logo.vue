@@ -148,7 +148,7 @@ export default navbar;
 
 .navbar-header {
   position: fixed;
-  top: 10%;
+  top: 70px;
   left: 5%;
   z-index: 1000;
   width: 50px;
