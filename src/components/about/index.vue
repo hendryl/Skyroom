@@ -1,7 +1,6 @@
 <template>
   <div id="about">
     <logo></logo>
-    <navbar></navbar>
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -13,12 +12,10 @@
 </template>
 
 <script>
-import navbar from '../../components/navbar';
 import logo from '../../components/logo';
 
 export default {
   components: {
-    navbar,
     logo,
   },
 };
