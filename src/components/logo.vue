@@ -85,6 +85,12 @@ const routes = [
   },
 ];
 
+function handleResize() {
+  if ($('.navbar-header').hasClass('active')) {
+    $('.navbar-toggle').click();
+  }
+}
+
 const navbar = {
   el() {
     return '#navbar';
@@ -98,6 +104,12 @@ const navbar = {
     setActive() {
       $('.navbar-header').toggleClass('active');
     },
+  },
+  ready() {
+    window.addEventListener('resize', handleResize);
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', handleResize);
   },
 };
 
@@ -145,6 +157,14 @@ export default navbar;
   background-color: rgba(0, 0, 0, 0.6);
   transition: all 350ms;
   overflow: hidden;
+
+  @media screen and (min-width: 769px) {
+    display: none;
+
+    .navbar-toggle {
+      display: none;
+    }
+  }
 }
 
 .navbar-header.active {
@@ -183,6 +203,7 @@ export default navbar;
 }
 
 .navbar-toggle {
+  display: block;
   position: absolute;
   left: 0;
   top: 0;
@@ -247,6 +268,7 @@ export default navbar;
     position: relative;
     color: white;
     padding: 12px 10px;
+    margin: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 
