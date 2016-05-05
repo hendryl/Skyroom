@@ -8,7 +8,7 @@
               <button type="button"
               class="navbar-toggle collapsed"
               data-toggle="collapse"
-              data-target="#navbar-content">
+              data-target="#navbar-dropdown">
               <div class="icons">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar bar-1"></span>
@@ -16,6 +16,18 @@
                 <span class="icon-bar bar-3"></span>
               </div>
               </button>
+            </div>
+            <div id="navbar-dropdown" class="collapse navbar-collapse navbar-inner">
+              <ul class="nav navbar-nav">
+                <li v-for="route in routes">
+                  <a v-link="{
+                    path: route.path,
+                    activeClass: 'active'
+                    }">
+                    {{ route.text }}
+                  </a>
+                </li>
+              </ul>
             </div>
             <a v-link="{path: '/home'}">
               <img class="img-responsive logo" src="../assets/skyroom_logo.png">
@@ -85,6 +97,7 @@ export default navbar;
 
 <style lang="scss" scoped>
 .logo-container {
+  display: relative;
   width: 100%;
   height: 100%;
   margin: 70px 0 30px 0;
@@ -111,11 +124,53 @@ export default navbar;
 }
 
 .navbar-header {
-  position: absolute;
+  position: relative;
+  top: 0;
   left: 10%;
+  float: left;
+}
 
+#navbar-dropdown {
+  position: absolute;
+  top: 70px;
+  left: 10%;
+  border: none;
+  padding: none;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  ul>li>a {
+    color: white;
+    padding: 12px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  ul>li>a:hover {
+    color: white;
+    background-color: lighten(rgba(0, 0, 0, 0.4), 50%);
+    border-radius: 0;
+  }
+
+  ul>li>a.active:hover {
+    color: white;
+    background-color: lighten(rgba(0, 0, 0, 0.4), 60%);
+    border-radius: 0;
+  }
+
+  ul>li>a:focus:active {
+    color: black;
+    background-color: darken(white, 10%);
+    border-radius: 0;
+  }
+
+  ul>li>a.active {
+    background-color: lighten(rgba(0, 0, 0, 0.4), 50%);
+    border-radius: 0;
+  }
+}
+
+#navbar-dropdown.navbar-collapse {
   @media screen and (min-width: 768px) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -167,6 +222,10 @@ export default navbar;
 
 #navbar {
   position: relative;
+
+  @media screen and (max-width: 768px) {
+      display: none;
+  }
 }
 
 .navbar {
