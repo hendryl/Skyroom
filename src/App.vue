@@ -66,4 +66,8 @@ a, button {
   letter-spacing: 3px;
 }
 
+.container {
+  max-width: 960px !important;
+}
+
 </style>

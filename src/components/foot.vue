@@ -46,7 +46,6 @@ export default {};
 
 .container {
   position: relative;
-  max-width: 800px;
   border-top: 1px solid white;
   min-height: 100%;
   padding: 14px 15px;

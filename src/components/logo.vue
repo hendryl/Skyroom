@@ -43,17 +43,19 @@
       <div id="navbar"
       role="navigation"
       class="navbar navbar-static-top center">
-        <div id="navbar-content" class="navbar-inner">
-          <ul class="nav navbar-nav">
-            <li v-for="route in routes">
-              <a v-link="{
-                path: route.path,
-                activeClass: 'active'
-                }">
-                {{ route.text }}
-              </a>
-            </li>
-          </ul>
+        <div class="container">
+          <div id="navbar-content" class="navbar-inner">
+            <ul class="nav navbar-nav">
+              <li v-for="route in routes">
+                <a v-link="{
+                  path: route.path,
+                  activeClass: 'active'
+                  }">
+                  {{ route.text }}
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="margin"></div>
@@ -340,7 +342,7 @@ export default navbar;
 }
 
 .navbar {
-  margin: 0;
+  margin: 0 auto;
   border: none;
 }
 
@@ -354,34 +356,26 @@ export default navbar;
   vertical-align: top;
 }
 
+#navbar-content {
+  width: 100%;
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}
+
 li > a {
   color: white;
   padding: 5px 20px;
-
-  @media screen and (min-width: 768px) {
-    padding: 5px 20px;
-    margin: 0 12px;
-  }
-
-  @media screen and (min-width: 992px) {
-    padding: 5px 30px;
-    margin: 0 20px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding: 5px 35px;
-    margin: 0 35px;
-  }
-
-  @media screen and (min-width: 1500px) {
-    padding: 5px 40px;
-    margin: 0 50px;
-  }
+  flex: 1 1 auto;
 }
 
 li > a:hover {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 15px;
 }
 

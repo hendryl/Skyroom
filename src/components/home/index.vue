@@ -3,10 +3,10 @@
     <logo></logo>
     <div class="container">
       <div class="row">
-        <div class="col-sm-6 col-xs-12">
+        <div class="col-sm-7 col-xs-12">
           <img class="hero-image img-responsive center-block" src="../../assets/images/home/home-welcome.png" alt="" />
         </div>
-        <div class="col-sm-6 col-xs-12">
+        <div class="col-sm-5 col-xs-12">
           <div class="margin"></div>
           <h1 class="title">
             HELLO!
