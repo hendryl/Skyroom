@@ -396,10 +396,10 @@ export default navbar;
   }
 
   .active {
-    color: white;
-    border: 2px solid white;
+    color: black;
+    background-color: white;
     border-radius: 15px;
-    padding: 3px 18px;
+    padding: 5px 20px;
   }
 }
 
