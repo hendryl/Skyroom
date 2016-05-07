@@ -63,7 +63,6 @@ h3 {
 
 a, button {
   font-family: $moon-font;
-  letter-spacing: 3px;
 }
 
 .container {

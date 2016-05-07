@@ -50,8 +50,7 @@
                 <a v-link="{
                   path: route.path,
                   activeClass: 'active'
-                  }">
-                  {{ route.text }}
+                  }"><div class="nav-text">{{ route.text }}</div>
                 </a>
               </li>
             </ul>
@@ -274,6 +273,13 @@ export default navbar;
     padding: 12px 10px;
     margin: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    letter-spacing: 3px;
+
+    .nav-text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   ul>li>a:hover {
@@ -372,6 +378,8 @@ export default navbar;
     background-color: transparent;
     flex: 1 1 auto;
     border-radius: 15px;
+    letter-spacing: 3px;
+    text-indent: 3px;
   }
 
   li > a:hover {
@@ -400,6 +408,13 @@ export default navbar;
     background-color: white;
     border-radius: 15px;
     padding: 5px 20px;
+  }
+
+  li > a.active:hover,
+  li > a.active:focus,
+  li > a.active:focus:active {
+    color: black;
+    background-color: white;
   }
 }
 
