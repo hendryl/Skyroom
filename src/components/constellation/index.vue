@@ -9,14 +9,17 @@
       </div>
     </div>
   </div>
+  <foot></foot>
 </template>
 
 <script>
 import logo from '../../components/logo';
+import foot from '../../components/foot';
 
 export default {
   components: {
     logo,
+    foot,
   },
 };
 </script>

@@ -15,6 +15,7 @@ export default {};
 
 html {
   height: 100%;
+  min-height: 100%;
   margin: 0;
 }
 
@@ -34,6 +35,11 @@ body {
   @media (max-width: 400px) {
     font-size: 14px;
   }
+}
+
+#app {
+  position: relative;
+  min-height: 100%;
 }
 
 h1,

@@ -23,14 +23,17 @@
       </div>
     </div>
   </div>
+  <foot></foot>
 </template>
 
 <script>
 import logo from '../../components/logo';
+import foot from '../../components/foot';
 
 export default {
   components: {
     logo,
+    foot,
   },
 };
 </script>
@@ -39,8 +42,16 @@ export default {
 @import "../../assets/css/variables.scss";
 
 #home {
+  position: relative;
   background-image: url('../../assets/images/home/home_bg.png');
-  height: 100vh;
+  min-height: 100%;
+  margin-bottom: -128px;
+}
+
+#home:after {
+  content: "";
+  display: block;
+  height: 128px;
 }
 
 .hero-image {
