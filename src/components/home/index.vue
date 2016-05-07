@@ -22,6 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/css/variables.scss";
 
 #home {
   background-image: url('../../assets/images/home/home_bg.png');

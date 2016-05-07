@@ -11,14 +11,7 @@ export default {};
 
 <style lang="scss">
 @import "./assets/fonts/stylesheet.css";
-
-$background-color: #1C0E1E;
-$red-color: #E82639;
-$blue-color: #30A0D2;
-
-$eiga-font: "eigaregular";
-$hero-font: "hero_lightlight";
-$moon-font: "moonbold";
+@import "./assets/css/variables.scss";
 
 html {
   height: 100%;
