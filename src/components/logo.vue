@@ -365,36 +365,42 @@ export default navbar;
     flex-flow: row nowrap;
     justify-content: space-between;
   }
-}
 
-li > a {
-  color: white;
-  padding: 5px 20px;
-  flex: 1 1 auto;
-}
+  li > a {
+    color: white;
+    padding: 5px 20px;
+    background-color: transparent;
+    flex: 1 1 auto;
+    border-radius: 15px;
+  }
 
-li > a:hover {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 15px;
-}
+  li > a:hover {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 3px 18px;
+  }
 
-li > a:focus {
-  color: black;
-  background-color: white;
-  border-radius: 15px;
-}
+  li > a:focus {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 3px 18px;
+  }
 
-li > a:focus:active {
-  color: black;
-  background-color: darken(white, 10%);
-  border-radius: 15px;
-}
+  li > a:focus:active {
+    color: white;
+    background-color: transparent;
+    border: 2px solid darken(white, 10%);
+    padding: 3px 18px;
+  }
 
-.active {
-  color: black;
-  background-color: white;
-  border-radius: 15px;
+  .active {
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 3px 18px;
+  }
 }
 
 .margin {
