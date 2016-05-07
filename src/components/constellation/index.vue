@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 
 #constellation {
-  background-image: url('../../assets/home_bg.png');
+  background-image: url('../../assets/images/home/home_bg.png');
   height: 100vh;
 }
 </style>

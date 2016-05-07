@@ -32,7 +32,7 @@
         <div class="col-xs-12">
           <div class="logo-container">
             <a v-link="{path: '/home'}">
-              <img class="img-responsive logo" src="../assets/skyroom_logo.png">
+              <img class="img-responsive logo" src="../assets/images/skyroom_logo.png">
               </img>
             </a>
           </div>
