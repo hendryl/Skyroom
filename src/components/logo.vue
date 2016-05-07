@@ -168,7 +168,7 @@ export default navbar;
 }
 
 .navbar-header.active {
-  width: 140px;
+  width: 180px;
   height: 280px;
   border: 1px solid white;
   border-radius: 0;
@@ -198,7 +198,7 @@ export default navbar;
 
 .navbar-container {
   position: relative;
-  width: 140px;
+  width: 180px;
   height: 280px;
 }
 
@@ -253,7 +253,7 @@ export default navbar;
   bottom: 0;
   margin: 0;
   border: none;
-  width: 140px;
+  width: 180px;
 
   transition: all 100ms;
 
