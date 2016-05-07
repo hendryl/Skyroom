@@ -45,13 +45,11 @@ export default {
   position: relative;
   background-image: url('../../assets/images/home/home_bg.png');
   min-height: 100%;
-  margin-bottom: -128px;
-}
+  padding-bottom: 105px + 20px;
 
-#home:after {
-  content: "";
-  display: block;
-  height: 128px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 136px + 20px;
+  }
 }
 
 .hero-image {
