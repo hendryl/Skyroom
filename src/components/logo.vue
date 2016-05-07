@@ -158,7 +158,7 @@ export default navbar;
   transition: all 350ms;
   overflow: hidden;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     display: none;
 
     .navbar-toggle {
@@ -332,7 +332,7 @@ export default navbar;
 #navbar {
   position: relative;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
       display: none;
   }
 }
@@ -356,9 +356,9 @@ li > a {
   color: white;
   padding: 5px 20px;
 
-  @media screen and (min-width: 768px){
-    padding: 5px 25px;
-    margin: 0 15px;
+  @media screen and (min-width: 768px) {
+    padding: 5px 20px;
+    margin: 0 12px;
   }
 
   @media screen and (min-width: 992px) {
@@ -375,7 +375,6 @@ li > a {
     padding: 5px 40px;
     margin: 0 50px;
   }
-
 }
 
 li > a:hover {
