@@ -341,6 +341,8 @@ export default navbar;
 
 #navbar {
   position: relative;
+  max-height: 30px;
+  min-height: 30px;
 
   @media screen and (max-width: 767px) {
       display: none;
@@ -419,7 +421,7 @@ export default navbar;
 }
 
 .margin {
-  height: 51px;
+  height: 50px;
 }
 
 </style>
