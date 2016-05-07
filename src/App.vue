@@ -25,7 +25,7 @@ body {
   background-color: $background-color;
   color: white;
 
-  font-family: $hero-font;
+  font-family: $opensans-font;
   font-size: 16px;
 
   @media (max-width: 900px) {

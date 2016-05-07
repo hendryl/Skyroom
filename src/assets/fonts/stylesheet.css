@@ -13,18 +13,6 @@
 }
 
 @font-face {
-  font-family: 'hero_lightlight';
-  src: url('hero_light-webfont.eot');
-  src: url('hero_light-webfont.eot?#iefix') format('embedded-opentype'),
-   url('hero_light-webfont.woff2') format('woff2'),
-   url('hero_light-webfont.woff') format('woff'),
-   url('hero_light-webfont.ttf') format('truetype'),
-   url('hero_light-webfont.svg#hero_lightlight') format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'moonbold';
   src: url('moon_bold-webfont.eot');
   src: url('moon_bold-webfont.eot?#iefix') format('embedded-opentype'),
