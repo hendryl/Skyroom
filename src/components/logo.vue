@@ -50,7 +50,8 @@
                 <a v-link="{
                   path: route.path,
                   activeClass: 'active'
-                  }"><div class="nav-text">{{ route.text }}</div>
+                  }">
+                    {{ route.text }}
                 </a>
               </li>
             </ul>
@@ -270,16 +271,11 @@ export default navbar;
   ul>li>a {
     position: relative;
     color: white;
-    padding: 12px 10px;
+    padding: 0 10px;
     margin: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     letter-spacing: 3px;
-
-    .nav-text {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    line-height: 45px;
   }
 
   ul>li>a:hover {
@@ -376,40 +372,45 @@ export default navbar;
 
   li > a {
     color: white;
-    padding: 5px 20px;
     background-color: transparent;
     flex: 1 1 auto;
     border-radius: 15px;
     letter-spacing: 3px;
     text-indent: 3px;
+    padding: 2px 20px 0 20px;
+    line-height: 28px;
   }
 
   li > a:hover {
     color: white;
     background-color: transparent;
     border: 2px solid white;
-    padding: 3px 18px;
+    padding: 2px 18px 0px 18px;
+    line-height: 24px;
   }
 
   li > a:focus {
     color: white;
     background-color: transparent;
     border: 2px solid white;
-    padding: 3px 18px;
+    padding: 2px 18px 0px 18px;
+    line-height: 24px;
   }
 
   li > a:focus:active {
     color: white;
     background-color: transparent;
     border: 2px solid darken(white, 10%);
-    padding: 3px 18px;
+    padding: 2px 18px 0px 18px;
+    line-height: 24px;
   }
 
   .active {
     color: black;
     background-color: white;
     border-radius: 15px;
-    padding: 5px 20px;
+    padding: 2px 20px 0px 20px;
+    line-height: 28px;
   }
 
   li > a.active:hover,
