@@ -7,6 +7,7 @@ import App from './App';
 Vue.use(VueRouter);
 
 const router = new VueRouter();
+
 configRouter(router);
 router.start(App, '#app');
 
