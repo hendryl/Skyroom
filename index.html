@@ -9,10 +9,59 @@
   </head>
   <body>
     <div id="app">
-      Loading...
+      <style type="text/css">
+        html, body, #app {
+          height: 100%;
+          width: 100%;
+        }
+        .load {
+          width: 100%;
+          height: 100%;
+          margin: 0;
+          background-image: url('https://dl.dropboxusercontent.com/u/13188176/Skyroom/welcome.png');
+        }
+        .load>.container-fluid {
+          width: 100%;
+          height: 100%;
+        }
+        .load>.container-fluid>.col-xs-12 {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+        .load-logo {
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .load-buf {
+          position: absolute;
+          top: 52%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .load-buf>img {
+          animation: rotating 2s linear infinite;
+        }
+        @keyframes rotating {
+          from {transform: rotate(0deg);}
+          to {transform: rotate(360deg);}
+        }
+      </style>
+      <div class="load">
+        <div class="container-fluid">
+          <div class="col-xs-12">
+            <img class="load-logo img-responsive" src="https://dl.dropboxusercontent.com/u/13188176/Skyroom/logo.png" />
+            <div class="load-buf">
+              <img src="https://dl.dropboxusercontent.com/u/13188176/Skyroom/buffer.png" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- built files will be auto injected -->
   </body>
 </html>
