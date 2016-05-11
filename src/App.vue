@@ -23,7 +23,7 @@ body {
   height: 100%;
   margin: 0;
   background-color: $background-color;
-  color: white;
+  color: $grey-color;
 
   font-family: $opensans-font;
   font-size: 16px;
