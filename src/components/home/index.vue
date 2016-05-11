@@ -45,10 +45,10 @@ export default {
   position: relative;
   background-image: url('../../assets/images/home/home_bg.png');
   min-height: 100%;
-  padding-bottom: 105px + 20px;
+  padding-bottom: 91px + 20px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 136px + 20px;
+    padding-bottom: 70px + 20px;
   }
 }
 
