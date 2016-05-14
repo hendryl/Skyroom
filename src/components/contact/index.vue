@@ -8,27 +8,33 @@
             <p>
               Jika kalian ingin bertanya atau ingin bergabung menjadi astronomer Skyroom, ayo hubungi kami!
             </p>
-            <form name="contact" method="post">
+            <form id="form-contact">
               <div class="form-group">
                 <label class="control-label" for="#input-name">
                   Name
                 </label>
-                <input required class="form-control" id="input-name"/>
+                <input name="name" required class="form-control" id="input-name"/>
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="#input-subject">
+                  Subject
+                </label>
+                <input name="subject" required class="form-control" id="input-subject" />
               </div>
               <div class="form-group">
                 <label class="control-label" for="#input-email">
                   Email
                 </label>
-                <input required class="form-control" id="input-email" type="email" />
+                <input name="email" required class="form-control" id="input-email" type="email" />
               </div>
               <div class="form-group">
                 <label class="control-label" for="#input-message">
                   Message
                 </label>
-                <textarea required class="form-control" id="input-message" cols="50" rows="4"></textarea>
+                <textarea name="message" required class="form-control" id="input-message" cols="50" rows="4"></textarea>
               </div>
               <div class="submit">
-                <input class="btn" type="submit" value="Send" />
+                <input class="btn" id="btn-submit" type="submit" v-on:click="send" value={{sendText}} v-bind:class="submitClass"/>
               </div>
             </form>
             <div class="margin"></div>
@@ -54,9 +60,85 @@
 <script>
 import basepage from '../basepage.vue';
 
+const accessToken = 'c0migbsugnmsn5ms9dci151a';
+const sendText = 'Send';
+const submitClass = '';
+
 export default {
   components: {
     basepage,
+  },
+
+  methods: {
+    submit(form) {
+      console.log(form);
+    },
+    send_onSuccess() {
+      this.sendText = 'Success!';
+      this.submitClass = 'success';
+      this.startTimeout();
+    },
+    send_onError(error) {
+      console.log(error);
+      this.sendText = 'Send failed!';
+      this.submitClass = 'failure';
+      this.startTimeout();
+    },
+    startTimeout() {
+      window.setTimeout(() => {
+        this.submitClass = '';
+        this.sendText = 'Send';
+        document.getElementById('btn-submit').disabled = false;
+      }, 2000);
+    },
+    send() {
+      this.sendText = 'Sending...';
+      document.getElementById('btn-submit').disabled = true;
+
+      const request = new XMLHttpRequest();
+
+      request.onreadystatechange = () => {
+        if (request.readyState === 4 && request.status === 200) {
+          this.send_onSuccess();
+        } else if (request.readyState === 4) {
+          this.send_onError(request.response);
+        }
+      };
+
+      const name = document.getElementById('input-name').value;
+      const subject = document.getElementById('input-subject').value;
+      const email = document.getElementById('input-email').value;
+      const message = document.getElementById('input-message').value;
+      const object = {
+        subject,
+        text: `[Message from ${name} (${email})]\n\n${message}`,
+        access_token: accessToken,
+      };
+
+      const params = this.toParams(object);
+      request.open('Post', 'https://postmail.invotes.com/send', true);
+      request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      request.send(params);
+
+      return false;
+    },
+
+    toParams(object) {
+      const formData = Object.keys(object).map(key => {
+        const preText = encodeURIComponent(key);
+        const postText = encodeURIComponent(object[key]);
+        return `${preText}=${postText}`;
+      });
+
+      return formData.join('&');
+    },
+  },
+
+  data() {
+    return {
+      sendText,
+      submitClass,
+    };
   },
 };
 </script>
@@ -107,7 +189,6 @@ textarea {
 
   @media screen and (min-width: 768px) {
     max-width: 100%;
-
   }
 }
 
@@ -120,9 +201,10 @@ textarea {
     position: absolute;
     top: 0;
     right: 0;
+    outline: none;
     background-color: transparent;
-    color: $red-color;
-    border: 2px solid $red-color;
+    color: $purple-color;
+    border: 2px solid $purple-color;
     border-radius: 15px;
     font-family: $moon-font;
     font-size: 18px;
@@ -131,6 +213,24 @@ textarea {
     height: 40px;
     padding: 0 12px;
     line-height: 40px;
+
+    &.success {
+      color: $green-color;
+      border-color: $green-color;
+
+      &.btn[disabled] {
+        opacity: 1;
+      }
+    }
+
+    &.failure {
+      color: $red-color;
+      border-color: $red-color;
+
+      &.btn[disabled] {
+        opacity: 1;
+      }
+    }
   }
 }
 
