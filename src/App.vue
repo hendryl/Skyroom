@@ -39,6 +39,7 @@ body {
 
 #app {
   position: relative;
+  max-height: 100%;
   min-height: 100%;
 }
 
@@ -67,6 +68,17 @@ a, button {
 
 .container {
   max-width: 960px !important;
+}
+
+.page {
+  padding-bottom: 91px + 20px;
+  position: relative;
+  max-height: 100%;
+  min-height: 100vh;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 70px + 20px;
+  }
 }
 
 </style>

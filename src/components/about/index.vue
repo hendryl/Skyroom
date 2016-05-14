@@ -1,25 +1,23 @@
 <template>
-  <div id="about">
-    <logo></logo>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          about
+  <div id="about" class="page">
+    <basepage>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            about
+          </div>
         </div>
       </div>
-    </div>
+    </basepage>
   </div>
-  <foot></foot>
 </template>
 
 <script>
-import logo from '../../components/logo';
-import foot from '../../components/foot';
+import basepage from '../basepage.vue';
 
 export default {
   components: {
-    logo,
-    foot,
+    basepage,
   },
 };
 </script>
@@ -28,6 +26,5 @@ export default {
 
 #about {
   background-image: url('../../assets/images/home/home_bg.png');
-  height: 100vh;
 }
 </style>

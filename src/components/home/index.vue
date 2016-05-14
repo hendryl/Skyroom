@@ -1,39 +1,37 @@
 <template>
-  <div id="home">
-    <logo></logo>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7 col-xs-12">
-          <img class="hero-image img-responsive center-block" src="../../assets/images/home/home-welcome.png" alt="" />
-        </div>
-        <div class="col-sm-5 col-xs-12">
-          <div class="margin"></div>
-          <h1 class="title">
-            HELLO!
-          </h1>
-          <div class="content-text">
-            <p>
-              Selamat datang astronomer muda!
-            </p>
-            <p>
-              Marilah bersama kita jelajahi keindahan dan misteri dari bintang-bintang yang bersinar di langit malam.
-            </p>
+  <div id="home" class="page">
+    <basepage>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 col-xs-12">
+            <img class="hero-image img-responsive center-block" src="../../assets/images/home/home-welcome.png" alt="" />
+          </div>
+          <div class="col-sm-5 col-xs-12">
+            <div class="margin"></div>
+            <h1 class="title">
+              HELLO!
+            </h1>
+            <div class="content-text">
+              <p>
+                Selamat datang astronomer muda!
+              </p>
+              <p>
+                Marilah bersama kita jelajahi keindahan dan misteri dari bintang-bintang yang bersinar di langit malam.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </basepage>
   </div>
-  <foot></foot>
 </template>
 
 <script>
-import logo from '../../components/logo';
-import foot from '../../components/foot';
+import basepage from '../basepage.vue';
 
 export default {
   components: {
-    logo,
-    foot,
+    basepage,
   },
 };
 </script>
@@ -42,14 +40,7 @@ export default {
 @import "../../assets/css/variables.scss";
 
 #home {
-  position: relative;
   background-image: url('../../assets/images/home/home_bg.png');
-  min-height: 100%;
-  padding-bottom: 91px + 20px;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 70px + 20px;
-  }
 }
 
 .hero-image {
