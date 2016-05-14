@@ -63,14 +63,13 @@ export default {
 }
 
 .title {
-  max-width: 270px;
+  color: $blue-color;
   font-family: $eiga-font;
   font-size: 10em;
-  color: $blue-color;
-  text-shadow: 5px 5px 0 $red-color;
-
-  text-align: center;
   margin: 0 auto;
+  max-width: 270px;
+  text-align: center;
+  text-shadow: 5px 5px 0 $red-color;
 
   @media screen and (min-width: 768px) {
     text-align: left;
@@ -79,14 +78,14 @@ export default {
 }
 
 .content-text {
-  text-align: center;
-  max-width: 330px;
   margin: 0 auto;
+  max-width: 330px;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
+    margin: inherit;
     max-width: 320px;
     text-align: left;
-    margin: inherit;
   }
 }
 
