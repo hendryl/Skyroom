@@ -13,10 +13,10 @@
             </h1>
             <div class="content-text">
               <p>
-                Selamat datang astronomer muda!
+                Welcome young astronomers!
               </p>
               <p>
-                Marilah bersama kita jelajahi keindahan dan misteri dari bintang-bintang yang bersinar di langit malam.
+                Let's explore the beauty of the stars in the universe and find out the secrets and wonders of the lights that shine on the night sky!
               </p>
             </div>
           </div>
