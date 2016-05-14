@@ -19,15 +19,15 @@ export default {};
           Follow Us
         </div>
         <a
-          href="http://www.facebook.com"
+          href="https://www.facebook.com/skyroomindonesia/"
           target="blank"
           class="facebook"></a>
         <a
-          href="http://www.twitter.com"
+          href="https://twitter.com/skyroom_indo"
           target="blank"
           class="twitter"></a>
         <a
-          href="http://www.instagram.com"
+          href="https://www.instagram.com/skyroom.indonesia/"
           target="blank"
           class="instagram"></a>
       </div>
