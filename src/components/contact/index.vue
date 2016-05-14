@@ -6,7 +6,7 @@
           <div class="col-xs-12 col-sm-6">
             <h1>Contact Us</h1>
             <p>
-              Jika kalian ingin bertanya atau ingin bergabung menjadi astronomer Skyroom, ayo hubungi kami!
+              If you are still confused or curious about the beauty and mystery of the stars in the universe, send us a question or feedback now!
             </p>
             <form id="form-contact">
               <div class="form-group">
