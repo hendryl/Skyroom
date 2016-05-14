@@ -71,13 +71,13 @@ a, button {
 }
 
 .page {
-  padding-bottom: 91px + 20px;
+  padding-bottom: 91px + 50px;
   position: relative;
   max-height: 100%;
   min-height: 100vh;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 70px + 20px;
+    padding-bottom: 70px + 50px;
   }
 }
 
