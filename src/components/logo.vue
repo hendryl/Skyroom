@@ -142,7 +142,7 @@ export default navbar;
   left: 5%;
   overflow: hidden;
   position: fixed;
-  top: 70px;
+  top: 20px;
   transition: all 350ms;
   width: 50px;
   z-index: 1000;
