@@ -31,6 +31,15 @@
                 <input class="btn" type="submit" value="Send" />
               </div>
             </form>
+            <div class="margin"></div>
+            <div>
+              <div>
+                <label>Find Us</label>
+              </div>
+              <div class="hashtag">
+                #SkyroomIndonesia
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -123,6 +132,18 @@ textarea {
     padding: 0 12px;
     line-height: 40px;
   }
+}
+
+.margin {
+  height: 70px;
+}
+
+.hashtag {
+  display: inline-block;
+  border: 1px solid white;
+  color: white;
+  font-size: 24px;
+  padding: 5px 10px;
 }
 
 </style>
