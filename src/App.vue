@@ -37,6 +37,11 @@ body {
   }
 }
 
+::selection {
+  color: white;
+  background-color: $grey-color;
+}
+
 #app {
   position: relative;
   max-height: 100%;
