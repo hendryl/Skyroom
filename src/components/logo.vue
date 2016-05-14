@@ -372,7 +372,11 @@ export default navbar;
 }
 
 .margin {
-  height: 50px;
+  height: 20px;
+
+  @media screen and(min-width: 768px) {
+    height: 50px;
+  }
 }
 
 </style>
