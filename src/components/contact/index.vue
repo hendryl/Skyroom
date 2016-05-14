@@ -42,7 +42,7 @@
               </div>
             </form>
             <div class="margin"></div>
-            <div>
+            <div class="hashtag-wrapper">
               <div>
                 <label>Find Us</label>
               </div>
@@ -164,6 +164,7 @@ export default {
 
 h1 {
   color: $purple-color;
+  margin-top: 0;
 }
 
 .form-control {
@@ -210,8 +211,13 @@ textarea {
     text-indent: 3px;
     letter-spacing: 3px;
     height: 40px;
+    width: 100%;
     padding: 0 12px;
     line-height: 40px;
+
+    @media screen and (min-width: 768px) {
+      width: auto;
+    }
 
     &.success {
       color: $green-color;
@@ -235,6 +241,14 @@ textarea {
 
 .margin {
   height: 70px;
+}
+
+.hashtag-wrapper {
+  text-align: center;
+
+  @media screen and(min-width: 768px) {
+    text-align: inherit;
+  }
 }
 
 .hashtag {
