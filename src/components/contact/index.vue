@@ -1,6 +1,10 @@
 <template>
   <div id="contact" class="page">
     <basepage>
+      <img
+        class="img-background img-responsive"
+        src="../../assets/images/contact/astro.png"
+        alt="" />
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-6">
@@ -49,10 +53,6 @@
           </div>
         </div>
       </div>
-      <img
-        class="img-background img-responsive"
-        src="../../assets/images/contact/astro.png"
-        alt="" />
     </basepage>
   </div>
 </template>
@@ -156,10 +156,9 @@ export default {
 
   @media screen and (min-width: 768px) {
     display: block;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 234px;
-    z-index: -1;
   }
 }
 
