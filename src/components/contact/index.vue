@@ -164,7 +164,6 @@ export default {
 
 h1 {
   color: $purple-color;
-  margin-top: 0;
 }
 
 .form-control {

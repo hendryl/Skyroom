@@ -58,6 +58,7 @@ h6 {
 }
 
 h1 {
+  margin-top: 0;
   font-size: 3em;
 }
 h2 {
