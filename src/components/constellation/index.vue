@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            constell
+            <center>This page is under construction!</center>
           </div>
         </div>
       </div>
