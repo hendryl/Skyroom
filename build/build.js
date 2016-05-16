@@ -1,4 +1,5 @@
 // https://github.com/shelljs/shelljs
+/* eslint-disable */
 require('shelljs/global')
 env.NODE_ENV = 'production'
 
