@@ -35,12 +35,10 @@
 </template>
 
 <script>
-import basepage from '../basepage.vue';
 import gallery from './gallery.vue';
 
 export default {
   components: {
-    basepage,
     gallery,
   },
 };

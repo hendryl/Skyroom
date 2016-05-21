@@ -25,13 +25,8 @@
 </template>
 
 <script>
-import basepage from '../basepage.vue';
 
-export default {
-  components: {
-    basepage,
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>

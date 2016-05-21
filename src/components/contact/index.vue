@@ -56,17 +56,11 @@
 </template>
 
 <script>
-import basepage from '../basepage.vue';
-
 const accessToken = 'c0migbsugnmsn5ms9dci151a';
 const sendText = 'Send';
 const submitClass = '';
 
 export default {
-  components: {
-    basepage,
-  },
-
   methods: {
     submit(form) {
       console.log(form);
