@@ -59,13 +59,13 @@ h6 {
 
 h1 {
   margin-top: 0;
-  font-size: 3em;
+  font-size: 2.25em;
 }
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 h3 {
-  font-size: 2em;
+  font-size: 1.75em;
 }
 
 a, button {
