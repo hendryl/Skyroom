@@ -54,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $eiga-font;
+  font-family: $arctic-font;
 }
 
 h1 {

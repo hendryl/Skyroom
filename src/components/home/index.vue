@@ -64,7 +64,7 @@ export default {
 
 .title {
   color: $blue-color;
-  font-family: $eiga-font;
+  font-family: $arctic-font;
   font-size: 10em;
   margin: 0 auto;
   max-width: 270px;
