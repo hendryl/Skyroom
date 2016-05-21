@@ -63,13 +63,13 @@ export default {
 }
 
 .title {
-  color: $blue-color;
+  color: $cyan-color;
   font-family: $arctic-font;
-  font-size: 10em;
+  font-size: 6em;
   margin: 0 auto;
   max-width: 270px;
   text-align: center;
-  text-shadow: 5px 5px 0 $red-color;
+  text-shadow: 5px 5px 0 $dark-purple-color;
 
   @media screen and (min-width: 768px) {
     text-align: left;
