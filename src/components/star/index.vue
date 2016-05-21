@@ -10,35 +10,35 @@
       </div>
       <div class="row destinations">
         <div class="anchor" id="des">
-          <a href="">
+          <a v-link="{path: '/star/description'}">
             <img class="img-responsive"
             src="../../assets/images/star/start/des.png"
             alt="" />
           </a>
         </div>
         <div class="anchor" id="com">
-          <a href="">
+          <a v-link="{path: '/star/composition'}">
             <img class="img-responsive"
             src="../../assets/images/star/start/com.png"
             alt="" />
           </a>
         </div>
         <div class="anchor" id="mas">
-          <a href="">
+          <a v-link="{path: '/star/mass'}">
             <img class="img-responsive"
             src="../../assets/images/star/start/mas.png"
             alt="" />
           </a>
         </div>
         <div class="anchor" id="temp">
-          <a href="">
+          <a v-link="{path: '/star/temperature'}">
             <img class="img-responsive"
             src="../../assets/images/star/start/temp.png"
             alt="" />
           </a>
         </div>
         <div class="anchor" id="death">
-          <a href="">
+          <a v-link="{path: '/star/death'}">
             <img class="img-responsive"
             src="../../assets/images/star/start/death.png"
             alt="" />
