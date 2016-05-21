@@ -40,10 +40,9 @@ export default {};
 @import "../assets/css/variables.scss";
 
 .footer {
+  display: table-row;
   background-color: rgba(0, 0, 0, 0.3);
-  bottom: 0;
   height: 91px;
-  position: absolute;
   width: 100%;
 
   @media screen and (min-width:768px) {

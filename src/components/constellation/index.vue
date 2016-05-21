@@ -1,14 +1,12 @@
 <template>
   <div id="constellation" class="page">
-    <basepage>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <center>This page is under construction!</center>
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <center>This page is under construction!</center>
         </div>
       </div>
-    </basepage>
+    </div>
   </div>
 </template>
 

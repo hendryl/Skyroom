@@ -1,28 +1,26 @@
 <template>
   <div id="home" class="page">
-    <basepage>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-7 col-xs-12">
-            <img class="hero-image img-responsive center-block" src="../../assets/images/home/home-welcome.png" alt="" />
-          </div>
-          <div class="col-sm-5 col-xs-12">
-            <div class="margin"></div>
-            <h1 class="title">
-              HELLO!
-            </h1>
-            <div class="content-text">
-              <p>
-                Welcome young astronomers!
-              </p>
-              <p>
-                Let's explore the beauty of the stars in the universe and find out the secrets and wonders of the lights that shine on the night sky!
-              </p>
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 col-xs-12">
+          <img class="hero-image img-responsive center-block" src="../../assets/images/home/home-welcome.png" alt="" />
+        </div>
+        <div class="col-sm-5 col-xs-12">
+          <div class="margin"></div>
+          <h1>
+            HELLO!
+          </h1>
+          <div class="content-text">
+            <p>
+              Welcome young astronomers!
+            </p>
+            <p>
+              Let's explore the beauty of the stars in the universe and find out the secrets and wonders of the lights that shine on the night sky!
+            </p>
           </div>
         </div>
       </div>
-    </basepage>
+    </div>
   </div>
 </template>
 
@@ -62,18 +60,20 @@ export default {
   }
 }
 
-.title {
+h1 {
   color: $cyan-color;
-  font-family: $arctic-font;
   font-size: 6em;
-  margin: 0 auto;
-  max-width: 270px;
-  text-align: center;
   text-shadow: 5px 5px 0 $dark-purple-color;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
-    text-align: left;
+    font-size: 5.5em;
     margin: -10px 0;
+    text-align: left;
+  }
+
+  @media screen and (min-width: 996px) {
+    font-size: 6em;
   }
 }
 

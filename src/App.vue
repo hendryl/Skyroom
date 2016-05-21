@@ -1,12 +1,23 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <basepage>
+      <router-view></router-view>
+    </basepage>
   </div>
 </template>
 
 <script>
+import basepage from './components/basepage';
+import logo from './components/logo';
+import foot from './components/foot';
 
-export default {};
+export default {
+  components: {
+    basepage,
+    logo,
+    foot,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -43,9 +54,12 @@ body {
 }
 
 #app {
+  display: table;
   position: relative;
-  max-height: 100%;
   min-height: 100%;
+  width: 100%;
+  background-color: transparent;
+  background-image: url('./assets/images/home/home_bg.png');
 }
 
 h1,
@@ -54,11 +68,11 @@ h3,
 h4,
 h5,
 h6 {
+  color: $purple-color;
   font-family: $arctic-font;
 }
 
 h1 {
-  margin-top: 0;
   font-size: 2.25em;
 }
 h2 {
@@ -77,14 +91,9 @@ a, button {
 }
 
 .page {
-  padding-bottom: 91px + 50px;
-  position: relative;
+  margin-bottom: 50px;
   max-height: 100%;
-  min-height: 100vh;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 70px + 50px;
-  }
+  min-height: 100%;
 }
 
 </style>

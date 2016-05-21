@@ -1,59 +1,57 @@
 <template>
   <div id="contact" class="page">
-    <basepage>
-      <img
-        class="img-background img-responsive"
-        src="../../assets/images/contact/astro.png"
-        alt="" />
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <h1>Contact Us</h1>
-            <p>
-              If you are still confused or curious about the beauty and mystery of the stars in the universe, send us a question or feedback now!
-            </p>
-            <form id="form-contact">
-              <div class="form-group">
-                <label class="control-label" for="#input-name">
-                  Name
-                </label>
-                <input name="name" required class="form-control" id="input-name"/>
-              </div>
-              <div class="form-group">
-                <label class="control-label" for="#input-subject">
-                  Subject
-                </label>
-                <input name="subject" required class="form-control" id="input-subject" />
-              </div>
-              <div class="form-group">
-                <label class="control-label" for="#input-email">
-                  Email
-                </label>
-                <input name="email" required class="form-control" id="input-email" type="email" />
-              </div>
-              <div class="form-group">
-                <label class="control-label" for="#input-message">
-                  Message
-                </label>
-                <textarea name="message" required class="form-control" id="input-message" cols="50" rows="4"></textarea>
-              </div>
-              <div class="submit">
-                <input class="btn" id="btn-submit" type="submit" v-on:click="send" value={{sendText}} v-bind:class="submitClass"/>
-              </div>
-            </form>
-            <div class="margin"></div>
-            <div class="hashtag-wrapper">
-              <div>
-                <label>Find Us</label>
-              </div>
-              <div class="hashtag">
-                #SkyroomIndonesia
-              </div>
+    <img
+      class="img-background img-responsive"
+      src="../../assets/images/contact/astro.png"
+      alt="" />
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <h1>Contact Us</h1>
+          <p>
+            If you are still confused or curious about the beauty and mystery of the stars in the universe, send us a question or feedback now!
+          </p>
+          <form id="form-contact">
+            <div class="form-group">
+              <label class="control-label" for="#input-name">
+                Name
+              </label>
+              <input name="name" required class="form-control" id="input-name"/>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="#input-subject">
+                Subject
+              </label>
+              <input name="subject" required class="form-control" id="input-subject" />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="#input-email">
+                Email
+              </label>
+              <input name="email" required class="form-control" id="input-email" type="email" />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="#input-message">
+                Message
+              </label>
+              <textarea name="message" required class="form-control" id="input-message" cols="50" rows="4"></textarea>
+            </div>
+            <div class="submit">
+              <input class="btn" id="btn-submit" type="submit" v-on:click="send" value={{sendText}} v-bind:class="submitClass"/>
+            </div>
+          </form>
+          <div class="margin"></div>
+          <div class="hashtag-wrapper">
+            <div>
+              <label>Find Us</label>
+            </div>
+            <div class="hashtag">
+              #SkyroomIndonesia
             </div>
           </div>
         </div>
       </div>
-    </basepage>
+    </div>
   </div>
 </template>
 
@@ -158,7 +156,6 @@ export default {
     display: block;
     position: absolute;
     right: 0;
-    top: 234px;
   }
 }
 
