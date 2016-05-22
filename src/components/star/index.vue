@@ -12,37 +12,33 @@
         </div>
       </div>
       <div class="row destinations">
-        <div class="anchor col-xs-12" id="des">
-          <div class="hidden-xs">
-            <a v-link="{path: '/star/description'}">
+        <a v-link="{path: '/star/description'}">
+          <div class="anchor col-xs-12" id="des">
+            <div class="hidden-xs">
               <img class="img-responsive"
               src="../../assets/images/star/start/des.png"
               alt="" />
-            </a>
-          </div>
-          <div class="visible-xs">
-            <a v-link="{path: '/star/description'}">
+            </div>
+            <div class="visible-xs">
               <img class="img-responsive"
               src="../../assets/images/star/start/mobile/des.png"
               alt="" />
-            </a>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="anchor col-xs-12" id="com">
-          <div class="hidden-xs">
-            <a v-link="{path: '/star/composition'}">
+          <a v-link="{path: '/star/composition'}">
+            <div class="hidden-xs">
               <img class="img-responsive"
               src="../../assets/images/star/start/com.png"
               alt="" />
-            </a>
-          </div>
-          <div class="visible-xs">
-            <a v-link="{path: '/star/composition'}">
+            </div>
+            <div class="visible-xs">
               <img class="img-responsive"
               src="../../assets/images/star/start/mobile/com.png"
               alt="" />
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
         <div class="anchor col-xs-12" id="mas">
           <a v-link="{path: '/star/mass'}">
