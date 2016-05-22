@@ -2,6 +2,9 @@
   <div id="star" class="page">
     <div class="container">
       <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">Choose Your Destination</h1>
+        </div>
         <div class="col-xs-12 trapesium">
           <img class="img-responsive center-block"
           src="../../assets/images/star/start/trap_1.png"
@@ -9,39 +12,78 @@
         </div>
       </div>
       <div class="row destinations">
-        <div class="anchor" id="des">
-          <a v-link="{path: '/star/description'}">
-            <img class="img-responsive"
-            src="../../assets/images/star/start/des.png"
-            alt="" />
-          </a>
+        <div class="anchor col-xs-12" id="des">
+          <div class="hidden-xs">
+            <a v-link="{path: '/star/description'}">
+              <img class="img-responsive"
+              src="../../assets/images/star/start/des.png"
+              alt="" />
+            </a>
+          </div>
+          <div class="visible-xs">
+            <a v-link="{path: '/star/description'}">
+              <img class="img-responsive"
+              src="../../assets/images/star/start/mobile/des.png"
+              alt="" />
+            </a>
+          </div>
         </div>
-        <div class="anchor" id="com">
-          <a v-link="{path: '/star/composition'}">
-            <img class="img-responsive"
-            src="../../assets/images/star/start/com.png"
-            alt="" />
-          </a>
+        <div class="anchor col-xs-12" id="com">
+          <div class="hidden-xs">
+            <a v-link="{path: '/star/composition'}">
+              <img class="img-responsive"
+              src="../../assets/images/star/start/com.png"
+              alt="" />
+            </a>
+          </div>
+          <div class="visible-xs">
+            <a v-link="{path: '/star/composition'}">
+              <img class="img-responsive"
+              src="../../assets/images/star/start/mobile/com.png"
+              alt="" />
+            </a>
+          </div>
         </div>
-        <div class="anchor" id="mas">
+        <div class="anchor col-xs-12" id="mas">
           <a v-link="{path: '/star/mass'}">
-            <img class="img-responsive"
-            src="../../assets/images/star/start/mas.png"
-            alt="" />
+            <div class="hidden-xs">
+              <img class="img-responsive"
+              src="../../assets/images/star/start/mas.png"
+              alt="" />
+            </div>
+            <div class="visible-xs">
+              <img class="img-responsive"
+              src="../../assets/images/star/start/mobile/mas.png"
+              alt="" />
+            </div>
           </a>
         </div>
-        <div class="anchor" id="temp">
+        <div class="anchor col-xs-12" id="temp">
           <a v-link="{path: '/star/temperature'}">
-            <img class="img-responsive"
-            src="../../assets/images/star/start/temp.png"
-            alt="" />
+            <div class="hidden-xs">
+              <img class="img-responsive"
+              src="../../assets/images/star/start/temp.png"
+              alt="" />
+            </div>
+            <div class="visible-xs">
+              <img class="img-responsive"
+              src="../../assets/images/star/start/mobile/temp.png"
+              alt="" />
+            </div>
           </a>
         </div>
-        <div class="anchor" id="death">
+        <div class="anchor col-xs-12" id="death">
           <a v-link="{path: '/star/death'}">
-            <img class="img-responsive"
-            src="../../assets/images/star/start/death.png"
-            alt="" />
+            <div class="hidden-xs">
+              <img class="img-responsive"
+              src="../../assets/images/star/start/death.png"
+              alt="" />
+            </div>
+            <div class="visible-xs">
+              <img class="img-responsive"
+              src="../../assets/images/star/start/mobile/death.png"
+              alt="" />
+            </div>
           </a>
         </div>
       </div>
@@ -74,46 +116,91 @@ export default {
 }
 
 .destinations {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
+  max-width: 820px;
+  margin: 20px auto;
 
-.anchor {
-  margin-left: -2px;
-
-  &:first-of-type {
-    margin-left: 0px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
   }
 
-  &:hover {
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    img {
-      opacity: 0;
+  .col-xs-12 {
+    @media screen and (min-width: 768px) {
+      padding: 0;
     }
   }
 }
 
+.anchor {
+  display: inline-block;
+  outline: none;
+
+  .img-responsive {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 0 0 -2px;
+
+    &:first-of-type {
+      margin-left: 0px;
+    }
+
+    &:hover {
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      .img-responsive {
+        opacity: 0;
+      }
+    }
+
+    .img-responsive {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    &:hover {
+      background-size: contain;
+    }
+  }
+}
+
+a:focus {
+  outline: none;
+}
+
 #des:hover {
-  background-image: url('../../assets/images/star/start/des_hover.png');
+  @media screen and (min-width: 768px) {
+    background-image: url('../../assets/images/star/start/des_hover.png');
+  }
 }
 
 #com:hover {
-  background-image: url('../../assets/images/star/start/com_hover.png');
+  @media screen and (min-width: 768px) {
+    background-image: url('../../assets/images/star/start/com_hover.png');
+  }
 }
 
 #mas:hover {
-  background-image: url('../../assets/images/star/start/mas_hover.png');
+  @media screen and (min-width: 768px) {
+    background-image: url('../../assets/images/star/start/mas_hover.png');
+  }
 }
 
 #temp:hover {
-  background-image: url('../../assets/images/star/start/temp_hover.png');
+  @media screen and (min-width: 768px) {
+    background-image: url('../../assets/images/star/start/temp_hover.png');
+  }
 }
 
 #death:hover {
-  background-image: url('../../assets/images/star/start/death_hover.png');
+  @media screen and (min-width: 768px) {
+    background-image: url('../../assets/images/star/start/death_hover.png');
+  }
 }
 
 
