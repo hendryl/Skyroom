@@ -13,7 +13,7 @@
           </div>
           <div class="visible-xs center-block">
             <img class="img-responsive"
-            src="../../assets/images/star/dest/mobile/trap_1.png"
+            src="../../assets/images/dest/mobile/trap_1.png"
             alt="" />
           </div>
         </div>
@@ -94,12 +94,12 @@
         <div class="col-xs-12">
           <div class="hidden-xs center-block">
             <img class="img-responsive"
-            src="../../assets/images/dest/start/trap_2.png"
+            src="../../assets/images/dest/trap_2.png"
             alt="" />
           </div>
           <div class="visible-xs center-block">
             <img class="img-responsive"
-            src="../../assets/images/dest/start/mobile/trap_2.png"
+            src="../../assets/images/dest/mobile/trap_2.png"
             alt="" />
           </div>
         </div>
@@ -108,7 +108,7 @@
         <div class="col-xs-12">
           <div class="center-block">
             <img class="img-responsive"
-            src="../../assets/images/dest/start/arm.png"
+            src="../../assets/images/dest/arm.png"
             alt="" />
           </div>
         </div>
