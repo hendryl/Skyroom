@@ -125,7 +125,7 @@ export default navbar;
 
 .logo-container {
   height: 100%;
-  margin: 70px 0 30px 0;
+  margin: 70px 0 50px 0;
   position: relative;
   width: 100%;
 }
