@@ -138,11 +138,6 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/css/variables.scss";
 
-#contact {
-  background-image: url('../../assets/images/home/home_bg.png');
-  position: relative;
-}
-
 .img-background {
   display: none;
 

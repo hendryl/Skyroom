@@ -121,10 +121,6 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/css/variables.scss";
 
-#star {
-  background-image: url('../../assets/images/home/home_bg.png');
-}
-
 .destinations {
   max-width: 820px;
   margin: 20px auto;

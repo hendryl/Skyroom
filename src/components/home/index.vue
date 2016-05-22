@@ -32,10 +32,6 @@ export default {};
 <style lang="scss" scoped>
 @import "../../assets/css/variables.scss";
 
-#home {
-  background-image: url('../../assets/images/home/home_bg.png');
-}
-
 .hero-image {
   max-width: 300px;
   @media screen and(min-width: 768px) {
