@@ -24,6 +24,12 @@ export function configRouter(router) {
     '/constellation': {
       component: require('./components/constellation/index.vue'),
     },
+    '/constellation/description': {
+      component: require('./components/constellation/description.vue'),
+    },
+    '/constellation/skymap': {
+      component: require('./components/constellation/skymap.vue'),
+    },
     '/about': {
       component: require('./components/about/index.vue'),
     },
