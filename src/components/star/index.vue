@@ -6,14 +6,21 @@
           <h1 class="text-center">Choose Your Destination</h1>
         </div>
         <div class="col-xs-12 trapesium">
-          <img class="img-responsive center-block"
-          src="../../assets/images/star/start/trap_1.png"
-          alt="" />
+          <div class="hidden-xs center-block">
+            <img class="img-responsive"
+            src="../../assets/images/star/start/trap_1.png"
+            alt="" />
+          </div>
+          <div class="visible-xs center-block">
+            <img class="img-responsive"
+            src="../../assets/images/star/start/mobile/trap_1.png"
+            alt="" />
+          </div>
         </div>
       </div>
       <div class="row destinations">
-        <a v-link="{path: '/star/description'}">
-          <div class="anchor col-xs-12" id="des">
+        <div class="anchor col-xs-12" id="des">
+          <a v-link="{path: '/star/description'}">
             <div class="hidden-xs">
               <img class="img-responsive"
               src="../../assets/images/star/start/des.png"
@@ -24,8 +31,8 @@
               src="../../assets/images/star/start/mobile/des.png"
               alt="" />
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
         <div class="anchor col-xs-12" id="com">
           <a v-link="{path: '/star/composition'}">
             <div class="hidden-xs">
@@ -85,9 +92,16 @@
       </div>
       <div class="row">
         <div class="col-xs-12 trapesium">
-          <img class="img-responsive center-block"
-          src="../../assets/images/star/start/trap_2.png"
-          alt="" />
+          <div class="hidden-xs center-block">
+            <img class="img-responsive"
+            src="../../assets/images/star/start/trap_2.png"
+            alt="" />
+          </div>
+          <div class="visible-xs center-block">
+            <img class="img-responsive"
+            src="../../assets/images/star/start/mobile/trap_2.png"
+            alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -131,11 +145,6 @@ export default {
   display: inline-block;
   outline: none;
 
-  .img-responsive {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-
   @media screen and (min-width: 768px) {
     margin: 0 0 0 -2px;
 
@@ -151,11 +160,6 @@ export default {
         opacity: 0;
       }
     }
-
-    .img-responsive {
-      max-width: 100%;
-      margin: 0;
-    }
   }
 
   @media screen and (min-width: 992px) {
@@ -165,8 +169,29 @@ export default {
   }
 }
 
-a:focus {
-  outline: none;
+a {
+  display: block;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.trapesium .img-responsive {
+  max-width: 310px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.img-responsive {
+  max-width: 300px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 #des:hover {
@@ -197,16 +222,6 @@ a:focus {
   @media screen and (min-width: 768px) {
     background-image: url('../../assets/images/star/start/death_hover.png');
   }
-}
-
-
-.arm-wrapper {
-  margin-top: 20px;
-}
-
-.arm {
-  position: absolute;
-  right: 0;
 }
 
 </style>
