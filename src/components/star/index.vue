@@ -19,7 +19,7 @@
         </div>
       </div>
       <div class="row destinations">
-        <div class="anchor col-xs-12" id="des">
+        <div class="anchor" id="des">
           <a v-link="{path: '/star/description'}">
             <div class="hidden-xs">
               <img class="img-responsive"
@@ -33,7 +33,7 @@
             </div>
           </a>
         </div>
-        <div class="anchor col-xs-12" id="com">
+        <div class="anchor" id="com">
           <a v-link="{path: '/star/composition'}">
             <div class="hidden-xs">
               <img class="img-responsive"
@@ -47,7 +47,7 @@
             </div>
           </a>
         </div>
-        <div class="anchor col-xs-12" id="mas">
+        <div class="anchor" id="mas">
           <a v-link="{path: '/star/mass'}">
             <div class="hidden-xs">
               <img class="img-responsive"
@@ -61,7 +61,7 @@
             </div>
           </a>
         </div>
-        <div class="anchor col-xs-12" id="temp">
+        <div class="anchor" id="temp">
           <a v-link="{path: '/star/temperature'}">
             <div class="hidden-xs">
               <img class="img-responsive"
@@ -75,7 +75,7 @@
             </div>
           </a>
         </div>
-        <div class="anchor col-xs-12" id="death">
+        <div class="anchor" id="death">
           <a v-link="{path: '/star/death'}">
             <div class="hidden-xs">
               <img class="img-responsive"
@@ -151,17 +151,25 @@ export default {
 }
 
 .anchor {
-  display: inline-block;
+  display: block;
   outline: none;
+  max-width: 300px;
+  margin: 0 auto;
+
+  &:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .img-responsive {
+      opacity: 0;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     &:hover {
       background-repeat: no-repeat;
       background-size: cover;
-
-      .img-responsive {
-        opacity: 0;
-      }
     }
   }
 }
@@ -184,30 +192,40 @@ a {
 }
 
 #des:hover {
+  background-image: url('../../assets/images/star/start/mobile/des_hover.png');
+
   @media screen and (min-width: 768px) {
     background-image: url('../../assets/images/star/start/des_hover.png');
   }
 }
 
 #com:hover {
+  background-image: url('../../assets/images/star/start/mobile/com_hover.png');
+
   @media screen and (min-width: 768px) {
     background-image: url('../../assets/images/star/start/com_hover.png');
   }
 }
 
 #mas:hover {
+  background-image: url('../../assets/images/star/start/mobile/mas_hover.png');
+
   @media screen and (min-width: 768px) {
     background-image: url('../../assets/images/star/start/mas_hover.png');
   }
 }
 
 #temp:hover {
+  background-image: url('../../assets/images/star/start/mobile/temp_hover.png');
+
   @media screen and (min-width: 768px) {
     background-image: url('../../assets/images/star/start/temp_hover.png');
   }
 }
 
 #death:hover {
+  background-image: url('../../assets/images/star/start/mobile/death_hover.png');
+
   @media screen and (min-width: 768px) {
     background-image: url('../../assets/images/star/start/death_hover.png');
   }
