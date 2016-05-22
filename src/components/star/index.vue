@@ -5,7 +5,7 @@
         <div class="col-xs-12">
           <h1 class="text-center">Choose Your Destination</h1>
         </div>
-        <div class="col-xs-12 trapesium">
+        <div class="col-xs-12">
           <div class="hidden-xs center-block">
             <img class="img-responsive"
             src="../../assets/images/star/start/trap_1.png"
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 trapesium">
+        <div class="col-xs-12">
           <div class="hidden-xs center-block">
             <img class="img-responsive"
             src="../../assets/images/star/start/trap_2.png"
@@ -146,12 +146,6 @@ export default {
   outline: none;
 
   @media screen and (min-width: 768px) {
-    margin: 0 0 0 -2px;
-
-    &:first-of-type {
-      margin-left: 0px;
-    }
-
     &:hover {
       background-repeat: no-repeat;
       background-size: cover;
@@ -161,12 +155,6 @@ export default {
       }
     }
   }
-
-  @media screen and (min-width: 992px) {
-    &:hover {
-      background-size: contain;
-    }
-  }
 }
 
 a {
@@ -174,14 +162,6 @@ a {
 
   &:focus {
     outline: none;
-  }
-}
-
-.trapesium .img-responsive {
-  max-width: 310px;
-
-  @media screen and (min-width: 768px) {
-    max-width: 100%;
   }
 }
 
