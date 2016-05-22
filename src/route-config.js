@@ -7,19 +7,19 @@ export function configRouter(router) {
       component: require('./components/star/index.vue'),
     },
     '/star/description': {
-      component: require('./components/star/index.vue'),
+      component: require('./components/star/description.vue'),
     },
     '/star/composition': {
-      component: require('./components/star/index.vue'),
+      component: require('./components/star/composition.vue'),
     },
     '/star/mass': {
-      component: require('./components/star/index.vue'),
+      component: require('./components/star/mass.vue'),
     },
     '/star/temperature': {
-      component: require('./components/star/index.vue'),
+      component: require('./components/star/temperature.vue'),
     },
     '/star/death': {
-      component: require('./components/star/index.vue'),
+      component: require('./components/star/death.vue'),
     },
     '/constellation': {
       component: require('./components/constellation/index.vue'),

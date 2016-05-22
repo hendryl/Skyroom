@@ -1,0 +1,18 @@
+<template>
+  <div id="star-mass" class="page">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <center>Mass page is under construction!</center>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss" scoped>
+</style>
