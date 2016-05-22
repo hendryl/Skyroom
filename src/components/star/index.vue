@@ -104,6 +104,15 @@
           </div>
         </div>
       </div>
+      <div class="row arm">
+        <div class="col-xs-12">
+          <div class="center-block">
+            <img class="img-responsive"
+            src="../../assets/images/star/start/arm.png"
+            alt="" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -120,6 +129,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/css/variables.scss";
+
+#star {
+  margin-bottom: 0;
+}
 
 .destinations {
   max-width: 820px;
@@ -198,6 +211,10 @@ a {
   @media screen and (min-width: 768px) {
     background-image: url('../../assets/images/star/start/death_hover.png');
   }
+}
+
+.arm {
+  margin: 30px 0 0 36px;
 }
 
 </style>
