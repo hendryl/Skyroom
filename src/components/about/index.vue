@@ -28,6 +28,30 @@
     </div>
     <div class="container">
       <div class="row">
+        <div class="col-xs-12">
+          <img class="img-responsive center-block"
+          src="../../assets/images/about/telescope.png" alt="" />
+          <h1 class="text-center">Our Mission</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <div class="mission-block">
+            <p>
+              We have a mission to educate and provide students, young readers, and astronomy enthusiasts with reliable and helpful content that are both educational and fun to share with friends and family.
+            </p>
+            <p>
+              The goal is to fill the readers with a sense of wonder and curiosity to start wondering and seeking knowledge about astronomy since it is not a common subject in Indonesia. Skyroom is here to plant the seed of exploration to everyone so they will go learn and understand the beauty of the universe and acknowledge our existence in the universe not only as a human being, but also as a part of the universe.
+            </p>
+            <p>
+              We hope by visiting and reading the information in Skyroom, we can give you a glimpse of the grand beauty and the miracles of the universe that we live in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
         <gallery></gallery>
       </div>
     </div>
@@ -71,6 +95,12 @@ export default {
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.mission-block {
+  border: 1px solid $purple-color;
+  padding: 20px;
+  margin-bottom: 60px;
 }
 
 </style>
