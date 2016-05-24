@@ -50,11 +50,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <gallery></gallery>
-      </div>
-    </div>
+    <gallery></gallery>
   </div>
 </template>
 
