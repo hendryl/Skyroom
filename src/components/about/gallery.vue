@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="col-xs-12 visible-xs">
-          <div id="carousel-mobile" class="carousel slide" data-ride="carousel" data-interval="2500" data-pause="">
+          <div id="carousel-mobile" class="carousel slide" data-ride="carousel" data-interval="2000" data-pause="">
             <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <img class="img-responsive center-block"
