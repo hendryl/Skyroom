@@ -3,30 +3,36 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-body">
-          <img class="img-responsive center-block" :src=image alt="" />
-          <div class="title text-center">
-            <img class="left-border" src="../../../assets/images/constellation/skymap/modal/left.png" role="presentation" />
-            <div class="h1">
-              {{title}}
-            </div>
-            <img class="right-border" src="../../../assets/images/constellation/skymap/modal/right.png" role="presentation" />
-          </div>
-          <div class="content-wrapper">
-            <div class="flex">
-              <div class="date text-center">
-                {{date}}
-                <div class="divider"></div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <img class="img-responsive center-block" :src=image alt="" />
+                <div class="title text-center">
+                  <img class="left-border" src="../../../assets/images/constellation/skymap/modal/left.png" role="presentation" />
+                  <div class="h1">
+                    {{title}}
+                  </div>
+                  <img class="right-border" src="../../../assets/images/constellation/skymap/modal/right.png" role="presentation" />
+                </div>
+                <div class="content-wrapper">
+                  <div class="flex">
+                    <div class="date text-center">
+                      {{date}}
+                      <div class="divider"></div>
+                    </div>
+                  </div>
+                  <p class="content">
+                    {{text}}
+                  </p>
+                </div>
+                <div class="close-button">
+                  <button type="button" data-dismiss="modal">
+                    <img src="../../../assets/images/constellation/skymap/modal/back.png" alt="" />
+                  </button>
+                </div>
               </div>
             </div>
-            <p class="content">
-              {{text}}
-            </p>
           </div>
-        </div>
-        <div class="close-button">
-          <button type="button" data-dismiss="modal">
-            <img src="../../../assets/images/constellation/skymap/modal/back.png" alt="" />
-          </button>
         </div>
       </div>
     </div>
@@ -62,15 +68,16 @@
 .modal-dialog {
   padding: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .modal-content {
-  display: table;
   border: none;
   border-radius: 0;
   box-shadow: none;
-  min-height: 100vh;
-  width: 100vw;
+  min-height: 100%;
+  width: 100%;
   background-color: $background-color;
 }
 
@@ -83,7 +90,7 @@
   display: block;
   margin: 0 auto;
   padding: 25px 0 15px 0;
-  width: 400px;
+  max-width: 400px;
 
   .h1 {
     display: inline-block;
@@ -136,7 +143,6 @@
 }
 
 .close-button {
-  display: table-row;
   text-align: center;
 }
 
