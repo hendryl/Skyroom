@@ -2,61 +2,34 @@
   <modal id="myModal" :image="image" :title="title" :date="date" :text="text"></modal>
   <div id="constellation-skymap" class="page">
     <div class="container">
-      <div class="row">
+      <div class="row skymap">
         <div class="col-xs-12">
           <h1 class="text-center">The Map Of The Stars</h1>
-          <div id="carousel" class="carousel slide">
+          <div id="carousel" class="carousel slide" data-interval="false">
             <div class="carousel-inner" role="listbox">
               <img class="img-responsive frame" src="../../assets/images/constellation/skymap/frame.png" role="presentation">
               <div class="item active">
                 <img class="img-responsive center-block" src="../../assets/images/constellation/skymap/spring.png" alt="Spring">
-                <div class="label">
-                  <button class="btn-carousel left">
-                    <img class="img-responsive" src="../../assets/images/constellation/skymap/left.png" alt="left">
-                  </button>
-                  <div class="h1 text-center">SPRING</div>
-                  <button class="btn-carousel right">
-                    <img class="img-responsive" src="../../assets/images/constellation/skymap/right.png" alt="right">
-                  </button>
-                </div>
               </div>
               <div class="item">
                 <img class="img-responsive center-block" src="../../assets/images/constellation/skymap/summer.png" alt="Summer">
-                <div class="label">
-                  <button class="btn-carousel left">
-                    <img class="img-responsive" src="../../assets/images/constellation/skymap/left.png" alt="left">
-                  </button>
-                  <div class="h1 text-center">SUMMER</div>
-                  <button class="btn-carousel right">
-                    <img class="img-responsive" src="../../assets/images/constellation/skymap/right.png" alt="right">
-                  </button>
-                </div>
               </div>
               <div class="item">
                 <img class="img-responsive center-block" src="../../assets/images/constellation/skymap/fall.png" alt="Fall">
-                <div class="label">
-                  <button class="btn-carousel left">
-                    <img class="img-responsive" src="../../assets/images/constellation/skymap/left.png" alt="left">
-                  </button>
-                  <div class="h1 text-center">FALL</div>
-                  <button class="btn-carousel right">
-                    <img class="img-responsive" src="../../assets/images/constellation/skymap/right.png" alt="right">
-                  </button>
-                </div>
               </div>
               <div class="item">
                 <img class="img-responsive center-block" src="../../assets/images/constellation/skymap/winter.png" alt="Winter">
-                <div class="label">
-                  <button class="btn-carousel left">
-                    <img class="img-responsive" src="../../assets/images/constellation/skymap/left.png" alt="left">
-                  </button>
-                  <div class="h1 text-center">WINTER</div>
-                  <button class="btn-carousel right">
-                    <img class="img-responsive" src="../../assets/images/constellation/skymap/right.png" alt="right">
-                  </button>
-                </div>
               </div>
             </div>
+          </div>
+          <div class="label">
+            <button class="btn-carousel left" href="#carousel" role="button" data-slide="prev" @click="changeSeason(-1)">
+              <img class="img-responsive" src="../../assets/images/constellation/skymap/left.png" alt="left">
+            </button>
+            <div class="h1 text-center">{{season}}</div>
+            <button class="btn-carousel right" href="#carousel" role="button" data-slide="next" @click="changeSeason(1)">
+              <img class="img-responsive" src="../../assets/images/constellation/skymap/right.png" alt="right">
+            </button>
           </div>
         </div>
       </div>
@@ -144,48 +117,74 @@
 </template>
 
 <script>
-  import modal from './modal/modal';
-  import content from './content';
+import modal from './modal/modal';
+import content from './content';
 
-  export default {
-    components: {
-      modal,
+const seasons = ['SPRING', 'SUMMER', 'FALL', 'WINTER'];
+
+export default {
+  components: {
+    modal,
+  },
+  data() {
+    return {
+      selected: 'aquarius',
+      selectedSeason: 0,
+    };
+  },
+  computed: {
+    image() {
+      return require(`../../assets/images/constellation/skymap/modal/${this.selected}.png`);
     },
-    data() {
-      return {
-        selected: 'aquarius',
-      };
+    text() {
+      return content[this.selected].text;
     },
-    computed: {
-      image() {
-        return require(`../../assets/images/constellation/skymap/modal/${this.selected}.png`);
-      },
-      text() {
-        return content[this.selected].text;
-      },
-      title() {
-        return this.selected.substring(0, 1).toUpperCase() + this.selected.substring(1);
-      },
-      date() {
-        return content[this.selected].date;
-      },
+    title() {
+      return this.selected.substring(0, 1).toUpperCase() + this.selected.substring(1);
     },
-    methods: {
-      select(name) {
-        this.selected = name;
-      },
+    date() {
+      return content[this.selected].date;
     },
-  };
+    season() {
+      return seasons[this.selectedSeason];
+    },
+  },
+  methods: {
+    select(name) {
+      this.selected = name;
+    },
+    changeSeason(value) {
+      let current = this.selectedSeason;
+      current += value;
+
+      if (current < 0) {
+        current = 3;
+      } else if (current > 3) {
+        current = 0;
+      }
+
+      this.selectedSeason = current;
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
 @import "../../assets/css/variables.scss";
 
-#carousel {
+.skymap {
   margin-bottom: 40px;
+}
+
+#carousel {
+  padding: 0;
 
   img {
     padding: 0;
+  }
+
+  .item>img {
+    animation: rotating 180s linear infinite;
   }
 
   .frame {
@@ -194,6 +193,15 @@
     top: 0;
     transform: translateX(-50%);
     z-index: 10;
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -207,7 +215,14 @@
     display: inline-block;
     color: $cyan-color;
     font-family: $arctic-font;
+    font-size: 2.5em;
     margin-top: 0;
+    min-width: 120px;
+
+    @media screen and(min-width: 768px) {
+      font-size: 3em;
+      min-width: 155px;
+    }
   }
 
   .btn-carousel {
@@ -218,7 +233,12 @@
     outline: none;
     height: 61px;
     width: 31px;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
+
+    @media screen and(min-width: 768px) {
+      padding-bottom: 11px;
+    }
+
 
     &.left {
       margin: 0 40px 0 0;
