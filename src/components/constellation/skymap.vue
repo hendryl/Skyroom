@@ -1,10 +1,5 @@
 <template>
-  <modal id="myModal"
-  :image=image
-  :title=title
-  :date=date
-  :text=text >
-  </modal>
+  <modal id="myModal" :image="image" :title="title" :date="date" :text="text"></modal>
   <div id="constellation-skymap" class="page">
     <div class="container">
       <div class="row">
@@ -12,21 +7,54 @@
           <h1 class="text-center">The Map Of The Stars</h1>
           <div id="carousel" class="carousel slide">
             <div class="carousel-inner" role="listbox">
+              <img class="img-responsive frame" src="../../assets/images/constellation/skymap/frame.png" role="presentation">
               <div class="item active">
                 <img class="img-responsive center-block" src="../../assets/images/constellation/skymap/spring.png" alt="Spring">
-                <h1 class="text-center">Spring</h1>
+                <div class="label">
+                  <button class="btn-carousel left">
+                    <img class="img-responsive" src="../../assets/images/constellation/skymap/left.png" alt="left">
+                  </button>
+                  <div class="h1 text-center">SPRING</div>
+                  <button class="btn-carousel right">
+                    <img class="img-responsive" src="../../assets/images/constellation/skymap/right.png" alt="right">
+                  </button>
+                </div>
               </div>
               <div class="item">
                 <img class="img-responsive center-block" src="../../assets/images/constellation/skymap/summer.png" alt="Summer">
-                <h1 class="text-center">Summer</h1>
+                <div class="label">
+                  <button class="btn-carousel left">
+                    <img class="img-responsive" src="../../assets/images/constellation/skymap/left.png" alt="left">
+                  </button>
+                  <div class="h1 text-center">SUMMER</div>
+                  <button class="btn-carousel right">
+                    <img class="img-responsive" src="../../assets/images/constellation/skymap/right.png" alt="right">
+                  </button>
+                </div>
               </div>
               <div class="item">
                 <img class="img-responsive center-block" src="../../assets/images/constellation/skymap/fall.png" alt="Fall">
-                <h1 class="text-center">Fall</h1>
+                <div class="label">
+                  <button class="btn-carousel left">
+                    <img class="img-responsive" src="../../assets/images/constellation/skymap/left.png" alt="left">
+                  </button>
+                  <div class="h1 text-center">FALL</div>
+                  <button class="btn-carousel right">
+                    <img class="img-responsive" src="../../assets/images/constellation/skymap/right.png" alt="right">
+                  </button>
+                </div>
               </div>
               <div class="item">
                 <img class="img-responsive center-block" src="../../assets/images/constellation/skymap/winter.png" alt="Winter">
-                <h1 class="text-center">Winter</h1>
+                <div class="label">
+                  <button class="btn-carousel left">
+                    <img class="img-responsive" src="../../assets/images/constellation/skymap/left.png" alt="left">
+                  </button>
+                  <div class="h1 text-center">WINTER</div>
+                  <button class="btn-carousel right">
+                    <img class="img-responsive" src="../../assets/images/constellation/skymap/right.png" alt="right">
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -116,51 +144,116 @@
 </template>
 
 <script>
-import modal from './modal/modal';
-import content from './content';
+  import modal from './modal/modal';
+  import content from './content';
 
-console.log(content);
-
-export default {
-  components: {
-    modal,
-  },
-  data() {
-    return {
-      selected: 'aquarius',
-    };
-  },
-  computed: {
-    image() {
-      return require(`../../assets/images/constellation/skymap/modal/${this.selected}.png`);
+  export default {
+    components: {
+      modal,
     },
-    text() {
-      return content[this.selected].text;
+    data() {
+      return {
+        selected: 'aquarius',
+      };
     },
-    title() {
-      return this.selected.substring(0, 1).toUpperCase() + this.selected.substring(1);
+    computed: {
+      image() {
+        return require(`../../assets/images/constellation/skymap/modal/${this.selected}.png`);
+      },
+      text() {
+        return content[this.selected].text;
+      },
+      title() {
+        return this.selected.substring(0, 1).toUpperCase() + this.selected.substring(1);
+      },
+      date() {
+        return content[this.selected].date;
+      },
     },
-    date() {
-      return content[this.selected].date;
+    methods: {
+      select(name) {
+        this.selected = name;
+      },
     },
-  },
-  methods: {
-    select(name) {
-      this.selected = name;
-    },
-  },
-};
+  };
 </script>
 
 <style lang="scss" scoped>
-#carousel {
-  .item {
-    background-image: url('../../assets/images/constellation/skymap/frame.png');
-    background-repeat: no-repeat;
-    background-position: center;
+@import "../../assets/css/variables.scss";
 
-    img {
-      padding-bottom: 100px;
+#carousel {
+  margin-bottom: 40px;
+
+  img {
+    padding: 0;
+  }
+
+  .frame {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+}
+
+.label {
+  display: block;
+  margin: 0 auto;
+  padding: 25px 0 15px 0;
+  max-width: 500px;
+
+  .h1 {
+    display: inline-block;
+    color: $cyan-color;
+    font-family: $arctic-font;
+    margin-top: 0;
+  }
+
+  .btn-carousel {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 61px;
+    width: 31px;
+    padding-bottom: 10px;
+
+    &.left {
+      margin: 0 40px 0 0;
+
+      img {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        transition-duration: 400ms;
+      }
+
+      &:hover,
+      &:hover:focus {
+        img {
+          transform: translateX(-4px);
+        }
+      }
+    }
+
+    &.right {
+      margin: 0 0 0 40px;
+
+      img {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        transition-duration: 400ms;
+      }
+
+      &:hover,
+      &:hover:focus {
+        img {
+          transform: translateX(4px);
+        }
+      }
     }
   }
 }
