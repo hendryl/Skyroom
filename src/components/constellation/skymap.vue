@@ -34,6 +34,13 @@
         </div>
       </div>
       <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <div class="description">
+            <p>The position of the east constellation and the west constellation is inverted. If the map was observed from the sky towards the ground, the left is west and the right is east, while when observed from the ground towards the sky, the left become east and the right become west.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-xs-12">
           <h1 class="text-center">The Zodiacs</h1>
         </div>
@@ -173,7 +180,7 @@ export default {
 @import "../../assets/css/variables.scss";
 
 .skymap {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #carousel {
@@ -275,6 +282,16 @@ export default {
         }
       }
     }
+  }
+}
+
+.description {
+  margin-bottom: 60px;
+  border: 1px solid $purple-color;
+  padding: 20px;
+
+  p {
+    text-align: justify;
   }
 }
 
