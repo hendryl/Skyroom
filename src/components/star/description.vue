@@ -7,7 +7,7 @@
         </div>
         <div class="col-xs-12 margin visible-xs"></div>
         <div class="col-xs-12 col-sm-6 whatis">
-          <h1 class="text-center">What Is A Star?</h1>
+          <h1>What Is A Star?</h1>
           <p>A star is a giant fireball that consists of hydrogen and helium. Stars are made from an incredible collection of mostly hydrogen atoms that slams into each other, forming an enormous gas cloud under its own gravity. The pressure in its' core keeps getting greater and stronger. In the same time the temperature keeps getting hotter and hotter. The hydrogen gas keeps accumulating and feeding the core of the proto-star.</p>
         </div>
       </div>
@@ -92,6 +92,14 @@ export default {};
 }
 
 .whatis {
+  h1 {
+    text-align: center;
+
+    @media screen and(min-width: 768px) {
+      text-align: left;
+    }
+  }
+
   p {
     margin-top: 40px;
   }
@@ -194,15 +202,15 @@ export default {};
 
 @keyframes sliding {
   0% {
-    left: -5%;
+    left: -1%;
   }
 
   50% {
-    left: 8%;
+    left: 1.5%;
   }
 
   100% {
-    left: -4.5%;
+    left: -1.5%;
   }
 }
 
