@@ -119,6 +119,17 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="pagination">
+            <a v-link="{
+                path: '/constellation/description',
+              }">
+              <img src="../../assets/images/prev.png" alt="previous">
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -297,6 +308,7 @@ export default {
 
 .zodiacs {
   padding: 0 15px;
+
   .col-xs-4 {
     padding: 0 2px;
 
@@ -341,4 +353,17 @@ a {
     }
   }
 }
+
+.pagination {
+  margin-top: 40px;
+
+  a {
+    transition-duration: 400ms;
+
+    &:hover {
+      transform: translateX(-4px);
+    }
+  }
+}
+
 </style>
