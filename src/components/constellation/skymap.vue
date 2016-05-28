@@ -356,8 +356,16 @@ a {
 
 .pagination {
   margin-top: 40px;
+  width: 100%;
+  text-align: center;
+
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 
   a {
+    display: block;
     transition-duration: 400ms;
 
     &:hover {
