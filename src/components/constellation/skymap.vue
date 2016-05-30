@@ -361,7 +361,8 @@ a {
 
 
   @media screen and (min-width: 768px) {
-    text-align: left;
+    display: flex;
+    justify-content: flex-start;
   }
 
   a {
