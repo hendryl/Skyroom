@@ -220,7 +220,8 @@ export default {};
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
   }
 
   a {
