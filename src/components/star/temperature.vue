@@ -138,11 +138,11 @@ export default {};
   }
 
   .astro {
-    animation: floating 60s linear infinite;
+    animation: float-temp 60s linear infinite;
   }
 }
 
-@keyframes floating {
+@keyframes float-temp {
   0% {
     transform: translate(0, 0);
   }

@@ -58,7 +58,10 @@
         </div>
         <div class="col-xs-12 visible-xs margin"></div>
         <div class="col-xs-12 col-sm-6">
-          <img src="../../assets/images/star/desc/astro.png" alt="" class="img-responsive center-block">
+          <div class="astro-anim">
+            <img src="../../assets/images/star/desc/astro_base.png" class="img-responsive base">
+            <img src="../../assets/images/star/desc/astro.png" alt="" class="img-responsive anim">
+          </div>
         </div>
       </div>
       <div class="row">
@@ -67,7 +70,7 @@
             <a v-link="{
                 path: '/star/composition',
               }">
-              <img src="../../assets/images/next.png" alt="previous">
+              <img src="../../assets/images/next.png" alt="next">
             </a>
           </div>
         </div>
@@ -94,6 +97,7 @@ export default {};
 .whatis {
   h1 {
     text-align: center;
+    padding-left: 20px;
 
     @media screen and(min-width: 768px) {
       text-align: left;
@@ -211,6 +215,78 @@ export default {};
 
   100% {
     left: -1.5%;
+  }
+}
+
+.astro-anim {
+  max-width: 344px;
+  margin: 0 auto;
+  position: relative;
+
+  @media screen and(min-width: 768px) {
+    margin: 0;
+  }
+
+  .anim {
+    position: absolute;
+    top: 0;
+    animation: floating-desc infinite linear 60s;
+
+    @media screen and(min-width: 768px) {
+      left: 30px;
+    }
+  }
+}
+
+@keyframes floating-desc {
+  0% {
+    top: 0px;
+    left: 30px;
+  }
+
+  20% {
+    top: 17px;
+    left: -12px;
+  }
+
+  30% {
+    top: 30px;
+    left: -4px;
+  }
+
+  40% {
+    top: 0px;
+    left: 10px;
+  }
+
+  50% {
+    top: 1px;
+    left: 31px;
+  }
+
+  60% {
+    top: 40px;
+    left: -2px;
+  }
+
+  70% {
+    top: 28px;
+    left: -8px;
+  }
+
+  80% {
+    top: -5px;
+    left: 21px;
+  }
+
+  90% {
+    top: 32px;
+    left: 5px;
+  }
+
+  100% {
+    top: 1px;
+    left: 29px;
   }
 }
 
