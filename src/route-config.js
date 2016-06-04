@@ -9,9 +9,6 @@ export function configRouter(router) {
     '/star/description': {
       component: require('./components/star/description.vue'),
     },
-    '/star/composition': {
-      component: require('./components/star/composition.vue'),
-    },
     '/star/mass': {
       component: require('./components/star/mass.vue'),
     },

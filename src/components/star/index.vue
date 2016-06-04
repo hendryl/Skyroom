@@ -33,20 +33,6 @@
             </div>
           </a>
         </div>
-        <div class="anchor" id="com">
-          <a v-link="{path: '/star/composition'}">
-            <div class="hidden-xs">
-              <img class="img-responsive"
-              src="../../assets/images/star/start/com.png"
-              alt="" />
-            </div>
-            <div class="visible-xs">
-              <img class="img-responsive"
-              src="../../assets/images/star/start/mobile/com.png"
-              alt="" />
-            </div>
-          </a>
-        </div>
         <div class="anchor" id="mas">
           <a v-link="{path: '/star/mass'}">
             <div class="hidden-xs">
@@ -196,14 +182,6 @@ a {
 
   @media screen and (min-width: 768px) {
     background-image: url('../../assets/images/star/start/des_hover.png');
-  }
-}
-
-#com:hover {
-  background-image: url('../../assets/images/star/start/mobile/com_hover.png');
-
-  @media screen and (min-width: 768px) {
-    background-image: url('../../assets/images/star/start/com_hover.png');
   }
 }
 
