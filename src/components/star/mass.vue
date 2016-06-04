@@ -40,7 +40,17 @@
           </p>
         </div>
       </div>
-      <div class="row chart"></div>
+      <div class="row chart">
+        <div class="col-xs-12 col-sm-6">
+          <img src="../../assets/images/star/mass/age.png" alt="" class="img-responsive center-block">
+        </div>
+        <div class="visible-xs col-xs-12 margin"></div>
+        <div class="col-xs-12 col-sm-6">
+          <p>
+            The low mass stars on the other hand have a relatively weaker pressure in its core thus making the fusion of hydrogen and helium occur only in its small core. The hydrogen and helium in the low mass star are mixed together and stays convective which means the stars still have a lot of fuel to burn up. Because of this process, the low mass stars have a longer lifespan than high mass stars. A very low mass star like a small red dwarf can have a lifespan of a trillion years. The universe itself is still less than 14 bullion years old, this means that the oldest red dwarf that exists now is still in their infant state.
+          </p>
+        </div>
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div class="pagination">
@@ -68,6 +78,10 @@ export default {};
 <style lang="scss" scoped>
 @import "../../assets/css/variables.scss";
 
+.margin {
+  height: 40px;
+}
+
 .margin-section {
   height: 85px;
 }
@@ -93,6 +107,11 @@ export default {};
     padding-top: 40px;
   }
 }
+
+.chart {
+  padding-top: 40px;
+}
+
 .pagination {
   margin-top: 40px;
   width: 100%;
