@@ -27,7 +27,18 @@
         </div>
       </div>
       <div class="row compare">
-        
+        <div class="col-xs-12 col-sm-6">
+          <h5 class="text-center">VY Canis Majoris</h5>
+          <img src="../../assets/images/star/mass/canis_majoris.png" alt="" class="img-responsive center-block">
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <img src="../../assets/images/star/mass/sun_2.png" alt="" class="img-responsive center-block">
+        </div>
+        <div class="description col-xs-12">
+          <p>
+            Our sun has a mass of 2 octillion ton of gas, 333.000 times more than the mass of earth. The mass of the star affects the pressure in it's core which generate nuclear fusions and provide the star's energy. This difference in pressure and energy affects the star's age. If the star has a lot of mass, the pressure becomes higher and the rate of nuclear fusion of turning hydrogen into helium becomes much faster. Because of this, high mass stars are more likely to have a shorter lifespan than the lower masss stars even though the high mass stars have more mass and fuel.
+          </p>
+        </div>
       </div>
       <div class="row chart"></div>
       <div class="row">
@@ -73,6 +84,15 @@ export default {};
   }
 }
 
+.compare {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .description {
+    padding-top: 40px;
+  }
+}
 .pagination {
   margin-top: 40px;
   width: 100%;

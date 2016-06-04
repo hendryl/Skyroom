@@ -81,6 +81,12 @@ h2 {
 h3 {
   font-size: 1.75em;
 }
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1.125em;
+}
 
 a, button {
   font-family: $moon-font;
