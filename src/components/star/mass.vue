@@ -15,11 +15,20 @@
           </p>
         </div>
       </div>
+      <div class="margin-section"></div>
       <div class="row weight">
-        <div class="col-xs-12"></div>
-        <div class="col-xs-12"></div>
+        <div class="col-xs-12 scale">
+          <img src="../../assets/images/star/mass/scale.png" alt="" class="img-responsive center-block">
+        </div>
+        <div class="col-xs-12">
+          <p>
+            The low mass stars consists of small red dwarf stars that are smaller thanthe sun. The sun is in the middle range of the category. This type of stars are small and not very bright. You need a telescope and clear sky to see it from earth. While the low mass stars are not that impressive, the high mass stars are much more frightening. They have a range from a few times larget up to thousands of times more massive than the sun. There are red giant, blue giant, red super giant, blue super giant, hyper giant, and they are very luminous. VY Canis Majoris is the largest star ever discovered and it has a diameter of 2 billion kilometers.
+          </p>
+        </div>
       </div>
-      <div class="row compare"></div>
+      <div class="row compare">
+        
+      </div>
       <div class="row chart"></div>
       <div class="row">
         <div class="col-xs-12">
@@ -48,8 +57,20 @@ export default {};
 <style lang="scss" scoped>
 @import "../../assets/css/variables.scss";
 
+.margin-section {
+  height: 85px;
+}
+
 .astro {
   padding-bottom: 25px;
+}
+
+.weight {
+  padding-bottom: 60px;
+
+  .scale {
+    padding-bottom: 25px;
+  }
 }
 
 .pagination {
