@@ -87,11 +87,11 @@ export default {};
 @import "../../assets/css/variables.scss";
 
 .margin {
-  height: 50px;
+  height: 30px;
 }
 
 .margin-section {
-  height: 85px;
+  height: 70px;
 }
 
 .whatis {
@@ -103,17 +103,13 @@ export default {};
       text-align: left;
     }
   }
-
-  p {
-    margin-top: 40px;
-  }
 }
 
 .process {
   margin: 0;
 
   img {
-    margin: 15px 0 20px 0;
+    margin: 30px 0;
   }
 
   p+p {
@@ -123,66 +119,52 @@ export default {};
 
 .fusion {
   .radiation-image {
-    margin: 20px 0 40px 0;
+    margin: 30px 0;
   }
 }
 
 .chart {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0 15px;
 
-  .left-text {
-    display: inline-block;
-    padding-right: 20px;
-    color: $red-color;
+  .left-text, .right-text {
+    padding-top: 10px;
     font-family: $arctic-font;
-    font-size: 1.5em;
-    line-height: 45px;
-    min-width: 125px;
+    font-size: 1.125em;
+    line-height: 25px;
+    min-width: 80px;
 
-    @media screen and(min-width: 600px) {
-      line-height: 55px;
-    }
-
-    @media screen and(min-width: 680px) {
-      line-height: 65px;
+    @media screen and(min-width: 420px) {
+      line-height: 40px;
+      min-width: 110px;
     }
 
     @media screen and(min-width: 768px) {
-      line-height: 70px;
+      line-height: 50px;
+      min-width: 120px;
+      font-size: 1.5em;
     }
   }
 
+  .left-text {
+    padding-right: 20px;
+    color: $red-color;
+  }
+
   .right-text {
-    display: inline-block;
     padding-left: 20px;
     color: $yellow-color;
-    font-family: $arctic-font;
-    font-size: 1.5em;
-    line-height: 45px;
-    min-width: 125px;
-
-    @media screen and(min-width: 600px) {
-      line-height: 55px;
-    }
-
-    @media screen and(min-width: 680px) {
-      line-height: 65px;
-    }
-
-    @media screen and(min-width: 768px) {
-      line-height: 70px;
-    }
   }
 }
 
 .chart-image {
-  display: inline-block;
   position: relative;
   max-width: 497px;
   margin: 0;
+  flex: 1 0 0;
 
   .base {
     z-index: 1;
@@ -291,7 +273,7 @@ export default {};
 }
 
 .pagination {
-  margin-top: 40px;
+  margin: 70px 0 0 0;
   width: 100%;
   text-align: center;
 
