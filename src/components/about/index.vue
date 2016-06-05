@@ -74,7 +74,7 @@ export default {
 
 .what-is {
   min-height: 500px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .img-background {
@@ -96,7 +96,7 @@ export default {
 .mission-block {
   border: 1px solid $purple-color;
   padding: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 </style>
