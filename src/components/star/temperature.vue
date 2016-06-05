@@ -9,11 +9,11 @@
           </div>
           <div class="col-xs-12 col-sm-6">
             <div class="hot-anim">
-                <div class="flare">
-                  <img class="img-responsive anim flare-1" src="../../assets/images/star/temp/flare_1.png" alt="">
-                  <img class="img-responsive anim flare-2" src="../../assets/images/star/temp/flare_2.png" alt="">
-                  <img class="img-responsive anim flare-3" src="../../assets/images/star/temp/flare_3.png" alt="">
-                </div>
+              <div class="flare">
+                <img class="img-responsive anim flare-1" src="../../assets/images/star/temp/flare_1.png" alt="">
+                <img class="img-responsive anim flare-2" src="../../assets/images/star/temp/flare_2.png" alt="">
+                <img class="img-responsive anim flare-3" src="../../assets/images/star/temp/flare_3.png" alt="">
+              </div>
               <img class="img-responsive anim astro" src="../../assets/images/star/temp/astro.png" alt="">
               <img src="../../assets/images/star/temp/star.png" alt="" class="img-responsive">
             </div>
@@ -118,6 +118,9 @@ export default {};
 
   .flare {
     overflow: hidden;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
   }
 
   .anim {
@@ -134,7 +137,6 @@ export default {};
 
   .flare-3 {
     animation: rotate 90s linear infinite;
-
   }
 
   .astro {
