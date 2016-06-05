@@ -191,7 +191,7 @@ export default {
 @import "../../assets/css/variables.scss";
 
 .skymap {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #carousel {
@@ -226,7 +226,7 @@ export default {
 .label {
   display: block;
   margin: 0 auto;
-  padding: 25px 0 15px 0;
+  padding: 30px 0 0 0;
   max-width: 500px;
 
   .h1 {
@@ -297,7 +297,7 @@ export default {
 }
 
 .description {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   border: 1px solid $purple-color;
   padding: 20px;
 
@@ -355,7 +355,7 @@ a {
 }
 
 .pagination {
-  margin-top: 40px;
+  margin: 70px 0 0 0;
   width: 100%;
   text-align: center;
 
