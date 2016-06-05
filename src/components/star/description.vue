@@ -68,7 +68,7 @@
         <div class="col-xs-12">
           <div class="pagination">
             <a v-link="{
-                path: '/star/composition',
+                path: '/star/mass',
               }">
               <img src="../../assets/images/next.png" alt="next">
             </a>
