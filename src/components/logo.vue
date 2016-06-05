@@ -372,10 +372,10 @@ export default navbar;
 }
 
 .margin {
-  height: 20px;
+  height: 30px;
 
   @media screen and(min-width: 768px) {
-    height: 50px;
+    height: 80px;
   }
 }
 

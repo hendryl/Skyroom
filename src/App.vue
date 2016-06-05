@@ -97,7 +97,7 @@ a, button {
 }
 
 .page {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   max-height: 100%;
   min-height: 100%;
 }
