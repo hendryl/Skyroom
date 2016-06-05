@@ -29,7 +29,15 @@
       <div class="row compare">
         <div class="col-xs-12 col-sm-6">
           <h5 class="text-center">VY Canis Majoris</h5>
-          <img src="../../assets/images/star/mass/canis_majoris.png" alt="" class="img-responsive center-block">
+          <div class="bottom">
+            <img src="../../assets/images/star/mass/ray_back.png" alt="" class="img-responsive">
+          </div>
+          <div class="top">
+            <img src="../../assets/images/star/mass/ray_front.png" alt="" class="img-responsive">
+          </div>
+          <div class="middle">
+            <img src="../../assets/images/star/mass/canis_majoris.png" alt="" class="img-responsive center-block">
+          </div>
         </div>
         <div class="col-xs-12 col-sm-6">
           <img src="../../assets/images/star/mass/sun_2.png" alt="" class="img-responsive center-block">
@@ -105,6 +113,22 @@ export default {};
 
   .description {
     padding-top: 40px;
+  }
+
+  .top {
+    position: absolute;
+    z-index: 3;
+    animation: rotate 50s linear reverse infinite;
+  }
+
+  .middle {
+    z-index: 2;
+  }
+
+  .bottom {
+    position: absolute;
+    z-index: 1;
+    animation: rotate 50s linear infinite;
   }
 }
 
