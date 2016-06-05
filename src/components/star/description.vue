@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <img src="../../assets/images/star/desc/star1.png" alt="" class="img-responsive center-block"></img>
+          <img src="../../assets/images/star/desc/star1.png" alt="" class="img-responsive center-block" />
         </div>
         <div class="col-xs-12 margin visible-xs"></div>
         <div class="col-xs-12 col-sm-6 whatis">
