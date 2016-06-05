@@ -87,22 +87,22 @@ export default {};
 @import "../../assets/css/variables.scss";
 
 .margin {
-  height: 40px;
+  height: 30px;
 }
 
 .margin-section {
-  height: 85px;
+  height: 70px;
 }
 
 .astro {
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 
 .weight {
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 
   .scale {
-    padding-bottom: 25px;
+    padding-bottom: 30px;
   }
 }
 
@@ -112,7 +112,7 @@ export default {};
   flex-wrap: wrap;
 
   .description {
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   .top {
@@ -133,11 +133,11 @@ export default {};
 }
 
 .chart {
-  padding-top: 40px;
+  padding-top: 70px;
 }
 
 .pagination {
-  margin-top: 40px;
+  margin: 70px 0 0 0;
   width: 100%;
   text-align: center;
 
