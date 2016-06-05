@@ -52,15 +52,15 @@
           </div>
         </div>
       </div>
-      <div class="margin-section"></div>
       <div class="row">
-        <div class="col-xs-12 col-visible-xs">
+        <div class="col-xs-12 margin-section"></div>
+        <div class="col-xs-12 visible-xs">
           <p>
             Temperature of a star also affects the color of the star. Hotter stars will appear blue and colder stars will appear red. Most of the stars in the universe has a range of color from bright blue, orange, yellow, and dim red depending on their temperature. There is a graph that scientists use to identify and categorize different types of stars according to their temperature and luminosity, which is called the HR Diagram. With this graph, scientists can learn about the star's life and future.
           </p>
         </div>
+        <div class="col-xs-12 visible-xs margin"></div>
       </div>
-      <div class="margin"></div>
       <div class="row hr-diagram">
         <div class="col-xs-12">
           <div class="h1">HR Diagram</div>
@@ -102,11 +102,11 @@ export default {};
 @import "../../assets/css/variables.scss";
 
 .margin {
-  height: 50px;
+  height: 30px;
 }
 
 .margin-section {
-  height: 85px;
+  height: 70px;
 }
 
 .hot {
