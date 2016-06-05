@@ -3,6 +3,8 @@
     <div class="container">
       <div class="row">
         <h1 class="text-center">Our Astronomers</h1>
+        <p class="text-center">Introducing the curious and passionate people who helped to contribute and be a big part of Skyroom family.</p>
+        <div class="margin"></div>
         <div class="hidden-xs">
           <div id="carousel" class="carousel slide">
             <ol class="carousel-indicators">
@@ -95,6 +97,10 @@ export default {};
 <style lang="scss">
 .gallery {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.margin {
+  height: 30px;
 }
 
 #carousel {
