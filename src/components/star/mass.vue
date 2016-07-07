@@ -120,9 +120,14 @@ export default {
   }
 
   .top {
-    position: absolute;
+    max-width: 100%;
+    position: relative;
     z-index: 3;
-    animation: rotate 50s linear reverse infinite;
+
+    img {
+      animation: rotate 50s linear reverse infinite;
+      position: absolute;
+    }
   }
 
   .middle {
@@ -130,9 +135,14 @@ export default {
   }
 
   .bottom {
-    position: absolute;
+    max-width: 100%;
+    position: relative;
     z-index: 1;
-    animation: rotate 50s linear infinite;
+
+    img {
+      animation: rotate 50s linear infinite;
+      position: absolute;
+    }
   }
 }
 
