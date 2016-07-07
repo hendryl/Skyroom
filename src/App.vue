@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <basepage>
-      <router-view></router-view>
+      <div id="content">
+        <router-view></router-view>
+      </div>
     </basepage>
   </div>
 </template>
@@ -101,5 +103,4 @@ a, button {
   max-height: 100%;
   min-height: 100%;
 }
-
 </style>
