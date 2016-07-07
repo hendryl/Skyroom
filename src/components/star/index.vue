@@ -104,14 +104,10 @@
 </template>
 
 <script>
-import basepage from '../basepage.vue';
 import routeTransition from '../../utils/routeTransition';
 
 export default {
   route: routeTransition,
-  components: {
-    basepage,
-  },
 };
 </script>
 

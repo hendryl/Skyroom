@@ -1,21 +1,19 @@
 <template>
   <div id="app">
-    <basepage>
-      <div id="content">
-        <router-view></router-view>
-      </div>
-    </basepage>
+    <logo></logo>
+    <div id="content">
+      <router-view></router-view>
+    </div>
+    <foot></foot>
   </div>
 </template>
 
 <script>
-import basepage from './components/basepage';
 import logo from './components/logo';
 import foot from './components/foot';
 
 export default {
   components: {
-    basepage,
     logo,
     foot,
   },
