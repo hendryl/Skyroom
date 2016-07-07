@@ -1,3 +1,5 @@
+/* eslint-disable global-require */
+
 export function configRouter(router) {
   router.map({
     '/home': {
