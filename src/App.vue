@@ -55,6 +55,7 @@ body {
   background-color: transparent;
   background-image: url('./assets/images/home/home_bg.png');
   display: table;
+  min-height: 100%;
   position: relative;
   width: 100%;
 }
