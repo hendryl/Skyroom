@@ -70,7 +70,9 @@
         <div class="col-xs-12 margin"></div>
         <div class="col-xs-12">
           <div class="wrapper">
-            <img src="../../assets/images/star/death/supernova_flash.png" alt="" class="img-responsive anim bottom" />
+            <div class="flash-wrapper bottom">
+              <img src="../../assets/images/star/death/supernova_flash.png" alt="" class="img-responsive anim" />
+            </div>
             <img src="../../assets/images/star/death/supernova_1.png" alt="" class="img-responsive top" />
           </div>
         </div>
@@ -138,14 +140,20 @@ export default {
 .supernova {
   .wrapper {
     position: relative;
-    display: flex;
-    justify-content: center;
+
+    .flash-wrapper {
+      height: auto;
+      margin: 0 auto;
+      max-width: 743px; // width of supernova image
+      position: relative;
+    }
 
     .bottom {
       z-index: 1;
     }
 
     .top {
+      margin: auto;
       z-index: 2;
     }
   }
@@ -155,8 +163,8 @@ export default {
   }
 
   .anim {
-    position: absolute;
     animation: supernova 3s linear alternate infinite;
+    position: absolute;
   }
 }
 
@@ -168,7 +176,6 @@ export default {
   100% {
     transform: scale(1.5);
   }
-
 }
 
 .pagination {

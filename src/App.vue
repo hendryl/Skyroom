@@ -28,18 +28,16 @@ export default {
 
 html {
   height: 100%;
-  min-height: 100%;
-  margin: 0;
+  width: 100%;
 }
 
 body {
-  height: 100%;
-  margin: 0;
   background-color: $background-color;
   color: $grey-color;
-
   font-family: $opensans-font;
   font-size: 16px;
+  height: 100%;
+  width: 100%;
 
   @media (max-width: 900px) {
     font-size: 15px;
@@ -56,12 +54,11 @@ body {
 }
 
 #app {
-  display: table;
-  position: relative;
-  min-height: 100%;
-  width: 100%;
   background-color: transparent;
   background-image: url('./assets/images/home/home_bg.png');
+  display: table;
+  position: relative;
+  width: 100%;
 }
 
 h1,
