@@ -137,10 +137,12 @@
 <script>
 import modal from './modal/modal';
 import content from './content';
+import routeTransition from '../../utils/routeTransition';
 
 const seasons = ['SPRING', 'SUMMER', 'FALL', 'WINTER'];
 
 export default {
+  route: routeTransition,
   components: {
     modal,
   },

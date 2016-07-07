@@ -56,11 +56,13 @@
 </template>
 
 <script>
+import routeTransition from '../../utils/routeTransition';
 const accessToken = 'c0migbsugnmsn5ms9dci151a';
 const sendText = 'Send';
 const submitClass = '';
 
 export default {
+  route: routeTransition,
   methods: {
     submit(form) {
       console.log(form);

@@ -25,8 +25,11 @@
 </template>
 
 <script>
+import routeTransition from '../../utils/routeTransition';
 
-export default {};
+export default {
+  route: routeTransition,
+};
 </script>
 
 <style lang="scss" scoped>

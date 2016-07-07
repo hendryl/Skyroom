@@ -56,8 +56,10 @@
 
 <script>
 import gallery from './gallery.vue';
+import routeTransition from '../../utils/routeTransition';
 
 export default {
+  route: routeTransition,
   components: {
     gallery,
   },

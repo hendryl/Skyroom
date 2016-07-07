@@ -76,7 +76,11 @@
 </template>
 
 <script>
-export default {};
+import routeTransition from '../../utils/routeTransition';
+
+export default {
+  route: routeTransition,
+};
 </script>
 
 <style lang="scss" scoped>
