@@ -158,6 +158,8 @@ export default {
 
     .bottom {
       margin: 0 auto;
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
       z-index: 1;
     }
 
@@ -173,13 +175,7 @@ export default {
 
   .anim {
     animation: supernova 3s linear alternate infinite;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     margin: auto;
-    overflow: hidden;
-    position: absolute;
   }
 }
 
