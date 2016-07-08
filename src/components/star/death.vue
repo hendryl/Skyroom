@@ -70,10 +70,12 @@
         <div class="col-xs-12 margin"></div>
         <div class="col-xs-12">
           <div class="wrapper">
-            <div class="flash-wrapper bottom">
-              <img src="../../assets/images/star/death/supernova_flash.png" alt="" class="img-responsive anim" />
+            <div class="cell-wrapper">
+              <div class="center">
+                <img src="../../assets/images/star/death/supernova_flash.png" alt="" class="img-responsive anim bottom" />
+                <img src="../../assets/images/star/death/supernova_1.png" alt="" class="img-responsive top" />
+              </div>
             </div>
-            <img src="../../assets/images/star/death/supernova_1.png" alt="" class="img-responsive top" />
           </div>
         </div>
         <div class="col-xs-12 caption">
@@ -139,21 +141,28 @@ export default {
 
 .supernova {
   .wrapper {
+    display: table;
     position: relative;
+    width: 100%;
 
-    .flash-wrapper {
-      height: auto;
-      margin: 0 auto;
-      max-width: 743px; // width of supernova image
+    .cell-wrapper {
+      display: table-cell;
       position: relative;
+      overflow: hidden;
+
+      .center {
+        margin: 0 auto;
+        width: 100%;
+      }
     }
 
     .bottom {
+      margin: 0 auto;
       z-index: 1;
     }
 
     .top {
-      margin: auto;
+      margin: 0 auto;
       z-index: 2;
     }
   }
@@ -164,6 +173,12 @@ export default {
 
   .anim {
     animation: supernova 3s linear alternate infinite;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
     position: absolute;
   }
 }
