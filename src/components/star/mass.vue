@@ -29,17 +29,17 @@
       <div class="row compare">
         <div class="col-xs-12 col-sm-6">
           <h5 class="text-center">VY Canis Majoris</h5>
-          <div class="bottom">
-            <img src="../../assets/images/star/mass/ray_back.png" alt="" class="img-responsive">
-          </div>
-          <div class="top">
-            <img src="../../assets/images/star/mass/ray_front.png" alt="" class="img-responsive">
-          </div>
-          <div class="middle">
-            <img src="../../assets/images/star/mass/canis_majoris.png" alt="" class="img-responsive center-block">
+          <div class="wrapper">
+            <div class="cell-wrapper">
+              <div class="center">
+                <img src="../../assets/images/star/mass/ray_back.png" alt="" class="img-responsive bottom">
+                <img src="../../assets/images/star/mass/ray_front.png" alt="" class="img-responsive top">
+                <img src="../../assets/images/star/mass/canis_majoris.png" alt="" class="img-responsive middle">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-6 the-sun">
           <img src="../../assets/images/star/mass/sun_2.png" alt="" class="img-responsive center-block">
         </div>
         <div class="description col-xs-12">
@@ -112,36 +112,52 @@ export default {
 
 .compare {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
+  align-items: center;
 
   .description {
     padding-top: 30px;
   }
 
-  .top {
-    max-width: 100%;
-    position: relative;
-    z-index: 3;
+  .the-sun {
 
-    img {
-      animation: rotate 50s linear reverse infinite;
-      position: absolute;
+  }
+
+  .wrapper {
+    display: table;
+    position: relative;
+    width: 100%;
+
+    .cell-wrapper {
+      display: table-cell;
+      position: relative;
+      overflow: hidden;
+
+      .center {
+        margin: 0 auto;
+        width: 100%;
+      }
     }
-  }
 
-  .middle {
-    z-index: 2;
-  }
-
-  .bottom {
-    max-width: 100%;
-    position: relative;
-    z-index: 1;
-
-    img {
-      animation: rotate 50s linear infinite;
+    .top {
+      animation: rotate 50s linear reverse infinite;
+      margin: 0 auto;
       position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: 3;
+    }
+
+    .middle {
+      margin: 0 auto;
+      z-index: 2;
+    }
+
+    .bottom {
+      animation: rotate 50s linear infinite;
+      margin: 0 auto;
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      z-index: 1;
     }
   }
 }
