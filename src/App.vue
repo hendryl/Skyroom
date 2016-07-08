@@ -51,15 +51,6 @@ body {
   background-color: $grey-color;
 }
 
-#app {
-  background-color: transparent;
-  background-image: url('./assets/images/home/home_bg.png');
-  display: table;
-  min-height: 100%;
-  position: relative;
-  width: 100%;
-}
-
 h1,
 h2,
 h3,
@@ -88,6 +79,16 @@ h5 {
 
 a, button {
   font-family: $moon-font;
+}
+
+#app {
+  background-color: transparent;
+  background-image: url('./assets/images/home/home_bg.png');
+  display: table;
+  height: 100%; // firefox needs this
+  min-height: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .container {
