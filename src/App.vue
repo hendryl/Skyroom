@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="bottom-layer" data-stellar-background-ratio="0.5"></div>
+    <div id="bottom-layer" data-stellar-background-ratio="0.6"></div>
     <div id="top-layer" data-stellar-background-ratio="0.8"></div>
     <div id="app">
       <logo></logo>
