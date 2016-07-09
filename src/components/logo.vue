@@ -1,65 +1,63 @@
 <template>
-  <header>
-    <div id="logo">
-      <div class="navbar-header">
-        <div class="navbar-container">
-          <button type="button"
-          v-on:click="setActive"
-          class="navbar-toggle"
-          data-target="#navbar-dropdown">
-          <div class="icons">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar bar-1"></span>
-            <span class="icon-bar bar-2"></span>
-            <span class="icon-bar bar-3"></span>
-          </div>
-        </button>
-          <div id="navbar-dropdown" class="navbar-inner">
-            <ul class="nav">
-              <li v-for="route in routes">
-                <a v-link="{
-                  path: route.path,
-                  activeClass: 'active'
-                  }">
-                  {{ route.text }}
-                </a>
-              </li>
-            </ul>
-          </div>
+  <header id="logo">
+    <div class="navbar-header">
+      <div class="navbar-container">
+        <button type="button"
+        v-on:click="setActive"
+        class="navbar-toggle"
+        data-target="#navbar-dropdown">
+        <div class="icons">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar bar-1"></span>
+          <span class="icon-bar bar-2"></span>
+          <span class="icon-bar bar-3"></span>
         </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="logo-container">
-              <a v-link="{path: '/home'}">
-                <img class="img-responsive logo" src="../assets/images/skyroom_logo.png">
-                </img>
+      </button>
+        <div id="navbar-dropdown" class="navbar-inner">
+          <ul class="nav">
+            <li v-for="route in routes">
+              <a v-link="{
+                path: route.path,
+                activeClass: 'active'
+                }">
+                {{ route.text }}
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div id="navbar"
-      role="navigation"
-      class="navbar navbar-static-top center">
-        <div class="container">
-          <div id="navbar-content" class="navbar-inner">
-            <ul class="nav navbar-nav">
-              <li v-for="route in routes">
-                <a v-link="{
-                  path: route.path,
-                  activeClass: 'active'
-                  }">
-                    {{ route.text }}
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="margin"></div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="logo-container">
+            <a v-link="{path: '/home'}">
+              <img class="img-responsive logo" src="../assets/images/skyroom_logo.png">
+              </img>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="navbar"
+    role="navigation"
+    class="navbar navbar-static-top center">
+      <div class="container">
+        <div id="navbar-content" class="navbar-inner">
+          <ul class="nav navbar-nav">
+            <li v-for="route in routes">
+              <a v-link="{
+                path: route.path,
+                activeClass: 'active'
+                }">
+                  {{ route.text }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="margin"></div>
   </header>
 </template>
 
