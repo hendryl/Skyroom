@@ -94,8 +94,9 @@ a, button {
   width: 100%;
 }
 
-#top-layer {
-  background-image: url('./assets/images/home/home_bg.png');
+#bottom-layer, #top-layer {
+  background-position: center;
+  background-size: contain;
   position: absolute;
   top: 0;
   height: 100%;
@@ -103,13 +104,12 @@ a, button {
   z-index: 0;
 }
 
+#top-layer {
+  background-image: url('./assets/images/home/home_bg.png');
+}
+
 #bottom-layer {
   background-image: url('./assets/images/home/home_bg_lower.png');
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
 }
 
 .container {
