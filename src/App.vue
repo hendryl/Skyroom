@@ -95,8 +95,8 @@ a, button {
 }
 
 #bottom-layer, #top-layer {
-  background-position: center;
-  background-size: contain;
+  background-position: top;
+  background-size: 40%;
   position: absolute;
   top: 0;
   height: 100%;
