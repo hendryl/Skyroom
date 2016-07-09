@@ -1,10 +1,14 @@
 <template>
-  <div id="app">
-    <logo></logo>
-    <div id="content">
-      <router-view></router-view>
+  <div>
+    <div id="bottom-layer" data-stellar-background-ratio="0.5"></div>
+    <div id="top-layer" data-stellar-background-ratio="0.8"></div>
+    <div id="app">
+      <logo></logo>
+      <div id="content">
+        <router-view></router-view>
+      </div>
+      <foot></foot>
     </div>
-    <foot></foot>
   </div>
 </template>
 
@@ -83,12 +87,29 @@ a, button {
 
 #app {
   background-color: transparent;
-  background-image: url('./assets/images/home/home_bg.png');
   display: table;
   height: 100%; // firefox needs this
   min-height: 100%;
   position: relative;
   width: 100%;
+}
+
+#top-layer {
+  background-image: url('./assets/images/home/home_bg.png');
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+#bottom-layer {
+  background-image: url('./assets/images/home/home_bg_lower.png');
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
 }
 
 .container {

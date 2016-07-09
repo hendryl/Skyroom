@@ -1,3 +1,5 @@
+/* global $ */
+
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
@@ -13,3 +15,5 @@ configRouter(router);
 router.start(App, '#app');
 
 window.router = router;
+
+$(window).stellar();
