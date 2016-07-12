@@ -14,6 +14,7 @@
             The constellations which were identified in ancient times were named after animals like Taurus the bull, Aquila the eagle, Lupus the wolf, Ursa Major The Great Bear, Pisces the fishes, and more. The constellations also get their names from famous figures like the great hunter Orion, heroes and other mythical figures such as Hercules, Cepheus, Perseus and also musical instruments like Lyra, or everyday objects like Sagitta/Arrow. The most famous constellations are inspired from greek mythology and legend but there are also many other civilizations like ancient China, Egypt, Mesopotamia, and Mayan that observed and understood the role of the stars to their daily life.
           </p>
         </div>
+        <div class="margin col-xs-12 visible-xs"></div>
         <div class="col-xs-12 visible-xs">
           <img src="../../assets/images/constellation/description/constell.png" alt="" class="img-responsive center-block">
         </div>
@@ -44,9 +45,11 @@
         <div class="col-xs-12 col-sm-4">
           <img src="../../assets/images/constellation/description/sky1.png" alt="" class="img-responsive center-block">
         </div>
+        <div class="margin col-xs-12 visible-xs"></div>
         <div class="col-xs-12 col-sm-4">
           <img src="../../assets/images/constellation/description/sky2.png" alt="" class="img-responsive center-block">
         </div>
+        <div class="margin col-xs-12 visible-xs"></div>
         <div class="col-xs-12 col-sm-4">
           <img src="../../assets/images/constellation/description/sky3.png" alt="" class="img-responsive center-block">
         </div>
@@ -56,6 +59,7 @@
         <div class="col-xs-12 col-sm-6">
           <p>In order to identify a constellation, you have to start by locating the brightest star, or two or three of the brightest around it. By doing so we can identify and observe what constellation it belongs to. Sadly stars are not forever, in thousands or millions of years from now the stars will drift away from each other or die and turn into darkness. This will make the constellations we see today become unrecognizable. So for now let's enjoy the beauty, the magnificence, and secrets of the stars and constellations while we still can.</p>
         </div>
+        <div class="margin col-xs-12 visible-xs"></div>
         <div class="col-xs-12 col-sm-6">
           <img src="../../assets/images/constellation/description/telescope.png" alt="" class="img-responsive center-block">
         </div>
