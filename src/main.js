@@ -27,6 +27,11 @@ const router = new VueRouter();
 
 configRouter(router);
 
+router.beforeEach((transition) => {
+  $('.navbar-header').removeClass('active');
+  transition.next();
+});
+
 router.start(App, '#app');
 
 window.router = router;

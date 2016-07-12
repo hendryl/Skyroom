@@ -87,10 +87,8 @@ const routes = [
   },
 ];
 
-function handleResize() {
-  if ($('.navbar-header').hasClass('active')) {
-    $('.navbar-toggle').click();
-  }
+function deactivate() {
+  $('.navbar-header').removeClass('active');
 }
 
 const navbar = {
@@ -108,10 +106,12 @@ const navbar = {
     },
   },
   ready() {
-    window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', deactivate);
+    window.addEventListener('scroll', deactivate);
   },
   beforeDestroy() {
-    window.removeEventListener('resize', handleResize);
+    window.removeEventListener('resize', deactivate);
+    window.removeEventListener('scroll', deactivate);
   },
 };
 
